@@ -28,25 +28,18 @@
     - Comunicación IoT basada en el protocolo MQTT (modelo publisher/subscriber).
 
 ## 4. Instalación del Framework (ESP-IDF)
-### 4.1 Dependencias del sistema (Ubuntu / Debian)
-        
-   ```bash
-sudo apt update
-sudo apt install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
-```
-
-### 4.2 Clonar el repositorio en un carpeta local
+### 4.1 Clonar el repositorio en un carpeta local
 ```bash
 git clone -b v5.5.3 --recursive https://github.com/espressif/esp-idf.git 
 ```
 
-### 4.3 Instalar toolchain
+### 4.2 Instalar toolchain
 ```bash
 cd ~/esp-idf
 ./install.sh esp32,esp32c3
 ```
 
-### 4.4 Cargar las variables y activar el entorno virtual
+### 4.3 Cargar las variables y activar el entorno virtual
 ```bash 
 source ~/sed/esp-idf/export.sh
 ```
@@ -74,16 +67,21 @@ idf.py -p /dev/ttyUSB0 build flash monitor
 ```
 
 ## 6. Node-RED (Docker)
-### 6.1 Instalación Mosquitto clients
+### 6.1 Instalación de Docker
+ ```bash
+sudo apt update
+sudo apt install docker.io
+ ```
+### 6.2 Instalación Mosquitto clients
  ```bash
 sudo apt update
 sudo apt install mosquitto-clients
 ```
-### 6.2 Ejecutar Node-RED
+### 6.3 Ejecutar Node-RED
  ```bash
 docker run -it -p 1880:1880 -v ./data:/data --name mynodered nodered/node-red 
  ```
-### 6.3 Acceder a dashboard
+### 6.4 Acceder a dashboard
 ```bash
 http://localhost:1880
 http://localhost:1880/dashboard
