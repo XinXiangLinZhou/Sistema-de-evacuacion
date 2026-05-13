@@ -81,9 +81,13 @@ sudo apt install mosquitto-clients
  ```bash
 docker run -it -p 1880:1880 -v ./data:/data --name mynodered nodered/node-red 
  ```
-### 6.4 Acceder a dashboard
+### 6.4 Acceder a Node-RED
 ```bash
 http://localhost:1880
+```
+E importar este fichero json node-red-flows.json al Node-RED
+### 6.5 Acceder a dashboard
+```bash
 http://localhost:1880/dashboard
 ```
 
