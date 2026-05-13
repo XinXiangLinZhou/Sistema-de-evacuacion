@@ -1,6 +1,5 @@
-# Sistema-de-evacuacion
-
-- Descripción del proyecto
+# Sistema de evacuacion
+## 1. Descripción del proyecto
 
   Este proyecto consiste en un sistema de evacuación diseñado para monitorizar la calidad del aire dentro de un edificio y ayudar en situaciones de emergencia.
   
@@ -10,8 +9,7 @@
   
   La comunicación entre los dispositivos se realiza mediante MQTT y la visualización de datos se implementa con Node-RED, mostrando el estado de los sensores y del sistema en tiempo real.
 
-- Tecnologías utilizadas
-
+## 2. Tecnologías utilizadas
     - ESP32
     - ESP32-C3
       - LEDs RGB
@@ -21,10 +19,74 @@
       - SI7021 (temperatura y humedad)
       - HC-SR04 (sensor diatancia)
         
-- Funcionalidades principales
+## 3. Funcionalidades principales
     - Monitorización de temperatura y humedad para la evaluación de la calidad del aire.
     - Sistema visual de alerta mediante LEDs.
     - Conteo de personas durante la evacuación.
     - Visualización en tiempo real desde Node-RED.
     - Detección de errores y desconexión de sensores.
     - Comunicación IoT basada en el protocolo MQTT (modelo publisher/subscriber).
+
+## 4. Instalación del Framework (ESP-IDF)
+### 4.1 Dependencias del sistema (Ubuntu / Debian)
+        
+   ```bash
+sudo apt update
+sudo apt install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+```
+
+### 4.2 Clonar el repositorio en un carpeta local
+```bash
+git clone -b v5.5.3 --recursive https://github.com/espressif/esp-idf.git 
+```
+
+### 4.3 Instalar toolchain
+```bash
+cd ~/esp-idf
+./install.sh esp32,esp32c3
+```
+
+### 4.4 Cargar las variables y activar el entorno virtual
+```bash 
+source ~/sed/esp-idf/export.sh
+```
+
+## 5. Ejecución del ESP32 para la recepción de datos de sensores
+### 5.1 Configurar el Hardware (Target)
+```bash
+cd ~/EVAC_SYSTEM
+idf.py set-target esp32
+```
+### 5.2 Configuración WiFi y MQTT
+  Editar la wifi y ip en main/Kconfig.projbuild ：
+  
+    - SSID
+    - PASSWORD
+    - BROKER URL
+    
+### 5.3 Verificación de configuración
+  ```bash
+idf.py menuconfig
+```
+### 5.4 Compilación y ejecución
+ ```bash
+idf.py -p /dev/ttyUSB0 build flash monitor
+```
+
+## 6. Node-RED (Docker)
+### 6.1 Instalación Mosquitto clients
+ ```bash
+sudo apt update
+sudo apt install mosquitto-clients
+```
+### 6.2 Ejecutar Node-RED
+ ```bash
+docker run -it -p 1880:1880 -v ./data:/data --name mynodered nodered/node-red 
+ ```
+### 6.3 Acceder a dashboard
+```bash
+http://localhost:1880
+http://localhost:1880/dashboard
+```
+
+  
