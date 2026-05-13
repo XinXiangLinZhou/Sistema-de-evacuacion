@@ -1,0 +1,295 @@
+Command: /home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/vboxuser/sed/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/build/EVAC_SYSTEM.elf /home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/build/bootloader/bootloader.elf -m '/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/vboxuser/sed/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+=00020h (    32) load
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 13 2026 15:24:43[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f8a8h (129192) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002f8d0 vaddr=3ffb0000 size=00748h (  1864) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=9f798h (653208) map[0m
+[0;32mI (357) esp_image: segment 3: paddr=000cf7c0 vaddr=3ffb0748 size=03c10h ( 15376) load[0m
+[0;32mI (363) esp_image: segment 4: paddr=000d33d8 vaddr=40080000 size=184c4h ( 99524) load[0m
+[0;32mI (402) esp_image: segment 5: paddr=000eb8a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) app_init: Application information:[0m
+[0;32mI (439) app_init: Project name:     EVAC_SYSTEM[0m
+[0;32mI (443) app_init: App version:      1[0m
+[0;32mI (447) app_init: Compile time:     May 13 2026 15:24:21[0m
+[0;32mI (452) app_init: ELF file SHA256:  2dc526389...[0m
+[0;32mI (456) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (460) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (464) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (468) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (472) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FFB8D20 len 000272E0 (156 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400984C4 len 00007B3C (30 KiB): IRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (508) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (524) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+[0;32mI (564) wifi:wifi driver task: 3ffc0e90, prio:23, stack:6656, core=0[0m
+[0;32mI (574) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (574) wifi:wifi certification version: v7.0[0m
+[0;32mI (574) wifi:config NVS flash: enabled[0m
+[0;32mI (574) wifi:config nano formatting: disabled[0m
+[0;32mI (574) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (584) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (584) wifi:Init management short buffer num: 32[0m
+[0;32mI (594) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (594) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (604) wifi:Init static rx buffer num: 10[0m
+[0;32mI (604) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi_init: rx ba win: 6[0m
+[0;32mI (614) wifi_init: accept mbox: 6[0m
+[0;32mI (614) wifi_init: tcpip mbox: 32[0m
+[0;32mI (614) wifi_init: udp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp tx win: 5760[0m
+[0;32mI (624) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (634) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (644) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (714) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (784) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (804) wifi:mode : sta (24:0a:c4:ea:36:70)[0m
+[0;32mI (804) wifi:enable tsf[0m
+[0;32mI (814) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (814) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (834) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (834) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (874) wifi:connected with lxx, aid = 2, channel 6, BW20, bssid = f2:95:80:ed:3a:21[0m
+[0;32mI (874) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (884) wifi:pm start, type: 1[0m
+
+[0;32mI (884) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (904) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1394) wifi:<ba-add>idx:0 (ifx:0, f2:95:80:ed:3a:21), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2404) esp_netif_handlers: sta ip: 172.20.10.4, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2804) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (2814) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (2824) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffcbbc0).[0m
+[0;32mI (2834) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffcc05c, Speed: 400000 Hz).[0m
+[0;32mI (2844) main_task: Returned from app_main()[0m
+[1;31mE (12814) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (12814) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (12814) mqtt_client: Error transport connect[0m
+[0;33mW (12814) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (12824) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (12824) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (12834) EVAC: SI7021 ONLINE[0m
+[0;33mW (12844) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (12844) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (12854) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (12854) EVAC: T=22.7 H=45.2 D=169.6[0m
+[0;33mW (18054) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (18054) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (18054) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (18064) EVAC: SI7021 ONLINE[0m
+[0;33mW (18074) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (18074) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (18074) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (18084) EVAC: T=22.7 H=45.3 D=169.6[0m
+[1;31mE (32834) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (32834) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (32834) mqtt_client: Error transport connect[0m
+[0;33mW (32834) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (32844) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (32844) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (32854) EVAC: SI7021 ONLINE[0m
+[0;33mW (32864) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (32864) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (32874) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (32874) EVAC: T=22.7 H=45.4 D=170.0[0m
+[0;33mW (38074) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (38074) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (38074) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (38084) EVAC: SI7021 ONLINE[0m
+[0;33mW (38094) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (38094) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (38094) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (38104) EVAC: T=22.7 H=45.8 D=169.6[0m
+[1;31mE (52854) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (52854) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (52854) mqtt_client: Error transport connect[0m
+[0;33mW (52854) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (52864) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (52864) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (52874) EVAC: SI7021 ONLINE[0m
+[0;33mW (52884) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (52884) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (52894) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (52894) EVAC: T=22.8 H=46.2 D=169.6[0m
+[0;33mW (58094) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (58094) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (58094) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (58104) EVAC: SI7021 ONLINE[0m
+[0;33mW (58114) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (58114) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (58114) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (58114) EVAC: T=22.8 H=46.9 D=132.9[0m
+[1;31mE (72874) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (72874) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (72874) mqtt_client: Error transport connect[0m
+[0;33mW (72874) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (72884) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (72884) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (72894) EVAC: SI7021 ONLINE[0m
+[0;33mW (72904) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (72904) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (72914) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (72914) EVAC: T=22.8 H=47.2 D=169.6[0m
+[0;33mW (78114) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (78114) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (78114) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (78124) EVAC: SI7021 ONLINE[0m
+[0;33mW (78134) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (78134) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (78134) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (78144) EVAC: T=22.8 H=47.8 D=169.6[0m
+[1;31mE (92894) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (92894) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (92894) mqtt_client: Error transport connect[0m
+[0;33mW (92894) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (92904) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (92904) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (92914) EVAC: SI7021 ONLINE[0m
+[0;33mW (92924) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (92924) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (92934) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (92934) EVAC: T=22.8 H=47.6 D=169.6[0m
+[0;33mW (98134) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (98134) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (98134) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (98144) EVAC: SI7021 ONLINE[0m
+[0;33mW (98154) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (98154) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (98154) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (98154) EVAC: T=22.8 H=47.4 D=133.8[0m
+[1;31mE (112914) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (112914) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (112914) mqtt_client: Error transport connect[0m
+[0;33mW (112914) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (112924) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (112924) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (112934) EVAC: SI7021 ONLINE[0m
+[0;33mW (112944) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (112944) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (112954) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (112954) EVAC: T=22.8 H=47.2 D=169.6[0m
+[0;33mW (118154) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (118154) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (118154) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (118164) EVAC: SI7021 ONLINE[0m
+[0;33mW (118174) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (118174) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (118174) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (118174) EVAC: T=22.8 H=47.4 D=132.5[0m
+[1;31mE (132934) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (132934) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (132934) mqtt_client: Error transport connect[0m
+[0;33mW (132934) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (132944) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (132944) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (132954) EVAC: SI7021 ONLINE[0m
+[0;33mW (132964) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (132964) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (132974) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (132974) EVAC: T=22.8 H=47.9 D=169.6[0m
+[0;33mW (138174) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (138174) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (138174) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (138184) EVAC: SI7021 ONLINE[0m
+[0;33mW (138194) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (138194) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (138194) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (138204) EVAC: T=22.8 H=48.4 D=169.6[0m
+[1;31mE (152954) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (152954) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (152954) mqtt_client: Error transport connect[0m
+[0;33mW (152954) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (152964) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (152964) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (152974) EVAC: SI7021 ONLINE[0m
+[0;33mW (152984) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (152984) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (152994) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (152994) EVAC: T=22.8 H=48.5 D=169.6[0m
+[0;33mW (158194) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (158194) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (158194) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (158204) EVAC: SI7021 ONLINE[0m
+[0;33mW (158214) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (158214) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (158214) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (158224) EVAC: T=22.8 H=48.4 D=169.6[0m
+[1;31mE (172974) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (172974) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (172974) mqtt_client: Error transport connect[0m
+[0;33mW (172974) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (172984) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (172984) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (172994) EVAC: SI7021 ONLINE[0m
+[0;33mW (173004) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (173004) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (173014) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (173014) EVAC: T=22.8 H=48.2 D=169.6[0m
+[0;33mW (178214) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (178214) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (178214) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (178224) EVAC: SI7021 ONLINE[0m
+[0;33mW (178234) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (178234) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (178234) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (178244) EVAC: T=22.9 H=48.3 D=169.5[0m
+[1;31mE (192994) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (192994) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (192994) mqtt_client: Error transport connect[0m
+[0;33mW (192994) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (193004) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (193004) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (193014) EVAC: SI7021 ONLINE[0m
+[0;33mW (193024) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (193024) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (193034) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (193034) EVAC: T=22.9 H=48.1 D=169.6[0m
+[0;33mW (198234) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (198234) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (198234) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (198244) EVAC: SI7021 ONLINE[0m
+[0;33mW (198254) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (198254) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (198254) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (198264) EVAC: T=22.9 H=47.5 D=169.6[0m

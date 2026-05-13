@@ -1,0 +1,45 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/bin/python -DESP_PLATFORM=1 -DIDF_TARGET=esp32 -DCCACHE_ENABLE=0 /home/vboxuser/sed/esp-workspace/EVAC_SYSTEM
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfgen/__main__.py", line 18, in <module>
+    main()
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfgen/core.py", line 724, in main
+    config = kconfiglib.Kconfig(args.kconfig, parser_version=parser_version)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 921, in __init__
+    self()
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 935, in __call__
+    prev = self._parse_block(None, self.top_node, self.top_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2633, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2633, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2670, in _parse_block
+    self._parse_block(_T_ENDMENU, node, node)
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2585, in _parse_block
+    self._parse_props(node)
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2782, in _parse_props
+    while self._tokenize_line():
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 1867, in _tokenize_line
+    self._tokens = self._tokenize(line)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 1990, in _tokenize
+    self._parse_error("unknown token at start of line")
+  File "/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 3491, in _parse_error
+    raise KconfigError(
+kconfiglib.core.KconfigError: /home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/main/Kconfig.projbuild:4: error: couldn't parse '//default "prac4.1"': unknown token at start of line
+CMake Error at /home/vboxuser/sed/esp-idf/tools/cmake/kconfig.cmake:230 (message):
+  Failed to run kconfgen
+  (/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/bin/python;-m;kconfgen;--list-separator=semicolon;--kconfig;/home/vboxuser/sed/esp-idf/Kconfig;--sdkconfig-rename;/home/vboxuser/sed/esp-idf/sdkconfig.rename;--config;/home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/sdkconfig;--env;IDF_MINIMAL_BUILD=n;--env-file;/home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  /home/vboxuser/sed/esp-idf/tools/cmake/build.cmake:706 (__kconfig_generate_config)
+  /home/vboxuser/sed/esp-idf/tools/cmake/project.cmake:741 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+

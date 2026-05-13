@@ -1,0 +1,692 @@
+Command: /home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/vboxuser/sed/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/build/EVAC_SYSTEM.elf /home/vboxuser/sed/esp-workspace/EVAC_SYSTEM/build/bootloader/bootloader.elf -m '/home/vboxuser/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/vboxuser/sed/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 13 2026 15:24:43[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f8a8h (129192) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002f8d0 vaddr=3ffb0000 size=00748h (  1864) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=9f798h (653208) map[0m
+[0;32mI (357) esp_image: segment 3: paddr=000cf7c0 vaddr=3ffb0748 size=03c10h ( 15376) load[0m
+[0;32mI (363) esp_image: segment 4: paddr=000d33d8 vaddr=40080000 size=184c4h ( 99524) load[0m
+[0;32mI (402) esp_image: segment 5: paddr=000eb8a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) app_init: Application information:[0m
+[0;32mI (439) app_init: Project name:     EVAC_SYSTEM[0m
+[0;32mI (443) app_init: App version:      1[0m
+[0;32mI (447) app_init: Compile time:     May 13 2026 15:31:01[0m
+[0;32mI (452) app_init: ELF file SHA256:  ff78f1373...[0m
+[0;32mI (456) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (460) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (464) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (468) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (472) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FFB8D20 len 000272E0 (156 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400984C4 len 00007B3C (30 KiB): IRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (508) spi_flash: flash io: dio[0m
+[0;33mW (511) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (524) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+[0;32mI (564) wifi:wifi driver task: 3ffc0e90, prio:23, stack:6656, core=0[0m
+[0;32mI (574) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (574) wifi:wifi certification version: v7.0[0m
+[0;32mI (574) wifi:config NVS flash: enabled[0m
+[0;32mI (574) wifi:config nano formatting: disabled[0m
+[0;32mI (574) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (584) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (584) wifi:Init management short buffer num: 32[0m
+[0;32mI (594) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (594) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (604) wifi:Init static rx buffer num: 10[0m
+[0;32mI (604) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi_init: rx ba win: 6[0m
+[0;32mI (614) wifi_init: accept mbox: 6[0m
+[0;32mI (614) wifi_init: tcpip mbox: 32[0m
+[0;32mI (614) wifi_init: udp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp tx win: 5760[0m
+[0;32mI (624) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (634) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (644) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (644) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (724) wifi:mode : sta (24:0a:c4:ea:36:70)[0m
+[0;32mI (724) wifi:enable tsf[0m
+[0;32mI (744) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (754) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (764) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (764) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (804) wifi:connected with lxx, aid = 2, channel 6, BW20, bssid = f2:95:80:ed:3a:21[0m
+[0;32mI (804) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (804) wifi:pm start, type: 1[0m
+
+[0;32mI (804) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (814) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1334) wifi:<ba-add>idx:0 (ifx:0, f2:95:80:ed:3a:21), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2344) esp_netif_handlers: sta ip: 172.20.10.4, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2734) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (2744) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (2744) main_task: Returned from app_main()[0m
+[0;32mI (2754) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffcbc84).[0m
+[0;32mI (2764) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffca7bc, Speed: 400000 Hz).[0m
+[0;32mI (2774) EVAC: MQTT connected[0m
+[0;32mI (2974) EVAC: SI7021 ONLINE[0m
+[0;32mI (2984) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (2984) EVAC: T=22.9 H=45.9 D=53.0[0m
+[0;32mI (8184) EVAC: SI7021 ONLINE[0m
+[0;32mI (8194) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (8194) EVAC: T=22.9 H=45.9 D=62.2[0m
+[0;32mI (13394) EVAC: SI7021 ONLINE[0m
+[0;32mI (13404) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (13404) EVAC: T=22.9 H=45.9 D=54.7[0m
+[0;32mI (18604) EVAC: SI7021 ONLINE[0m
+[0;32mI (18624) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (18624) EVAC: T=22.9 H=45.8 D=113.4[0m
+[0;32mI (23824) EVAC: SI7021 ONLINE[0m
+[0;32mI (23844) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (23844) EVAC: T=22.9 H=45.8 D=127.4[0m
+[0;32mI (29044) EVAC: SI7021 ONLINE[0m
+[0;32mI (29064) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (29064) EVAC: T=22.9 H=45.8 D=130.6[0m
+[0;32mI (34264) EVAC: SI7021 ONLINE[0m
+[0;32mI (34284) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (34284) EVAC: T=22.9 H=45.8 D=112.8[0m
+[0;32mI (39484) EVAC: SI7021 ONLINE[0m
+[0;32mI (39504) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (39504) EVAC: T=22.9 H=45.7 D=169.5[0m
+[0;32mI (44704) EVAC: SI7021 ONLINE[0m
+[0;32mI (44714) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (44714) EVAC: T=22.9 H=45.7 D=59.5[0m
+[0;32mI (49914) EVAC: SI7021 ONLINE[0m
+[0;32mI (49924) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (49924) EVAC: T=22.9 H=45.6 D=91.5[0m
+[0;32mI (55134) EVAC: SI7021 ONLINE[0m
+[0;32mI (55154) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (55154) EVAC: T=22.9 H=45.5 D=169.4[0m
+[0;32mI (60354) EVAC: SI7021 ONLINE[0m
+[0;32mI (60374) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (60374) EVAC: T=22.9 H=45.4 D=167.3[0m
+[0;32mI (65574) EVAC: SI7021 ONLINE[0m
+[0;32mI (65594) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (65594) EVAC: T=22.9 H=45.3 D=169.4[0m
+[0;32mI (70794) EVAC: SI7021 ONLINE[0m
+[0;32mI (70814) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (70814) EVAC: T=22.9 H=45.2 D=169.5[0m
+[0;32mI (76014) EVAC: SI7021 ONLINE[0m
+[0;32mI (76024) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (76024) EVAC: T=22.9 H=45.1 D=80.6[0m
+[0;32mI (81224) EVAC: SI7021 ONLINE[0m
+[0;32mI (81244) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (81244) EVAC: T=22.9 H=45.0 D=167.3[0m
+[0;32mI (86444) EVAC: SI7021 ONLINE[0m
+[0;32mI (86464) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (86464) EVAC: T=22.9 H=44.9 D=131.5[0m
+[0;32mI (91664) EVAC: SI7021 ONLINE[0m
+[0;32mI (91674) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (91674) EVAC: T=22.9 H=44.9 D=130.6[0m
+[0;32mI (96884) EVAC: SI7021 ONLINE[0m
+[0;32mI (96904) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (96904) EVAC: T=22.9 H=44.8 D=169.5[0m
+[0;32mI (102104) EVAC: SI7021 ONLINE[0m
+[0;32mI (102124) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (102124) EVAC: T=22.9 H=44.8 D=169.1[0m
+[0;32mI (107324) EVAC: SI7021 ONLINE[0m
+[0;32mI (107344) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (107344) EVAC: T=22.9 H=44.8 D=169.5[0m
+[0;32mI (112544) EVAC: SI7021 ONLINE[0m
+[0;32mI (112564) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (112564) EVAC: T=22.9 H=44.8 D=169.5[0m
+[0;32mI (117764) EVAC: SI7021 ONLINE[0m
+[0;32mI (117784) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (117784) EVAC: T=22.9 H=44.7 D=141.7[0m
+[0;32mI (122984) EVAC: SI7021 ONLINE[0m
+[0;32mI (123004) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (123004) EVAC: T=22.9 H=44.7 D=169.4[0m
+[0;32mI (128204) EVAC: SI7021 ONLINE[0m
+[0;32mI (128214) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (128214) EVAC: T=22.9 H=44.7 D=67.1[0m
+[0;32mI (133414) EVAC: SI7021 ONLINE[0m
+[0;32mI (133424) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (133424) EVAC: T=23.0 H=44.7 D=129.3[0m
+[0;32mI (138634) EVAC: SI7021 ONLINE[0m
+[0;32mI (138654) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (138654) EVAC: T=23.0 H=44.7 D=100.9[0m
+[0;32mI (143854) EVAC: SI7021 ONLINE[0m
+[0;32mI (143864) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (143864) EVAC: T=23.0 H=44.7 D=71.7[0m
+[0;32mI (149064) EVAC: SI7021 ONLINE[0m
+[0;32mI (149074) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (149074) EVAC: T=23.0 H=44.6 D=71.0[0m
+[0;32mI (154274) EVAC: SI7021 ONLINE[0m
+[0;32mI (154284) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (154284) EVAC: T=23.0 H=44.6 D=67.1[0m
+[0;32mI (159484) EVAC: SI7021 ONLINE[0m
+[0;32mI (159494) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (159494) EVAC: T=23.0 H=44.6 D=83.4[0m
+[0;32mI (164694) EVAC: SI7021 ONLINE[0m
+[0;32mI (164704) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (164704) EVAC: T=23.0 H=44.6 D=55.3[0m
+[0;32mI (169904) EVAC: SI7021 ONLINE[0m
+[0;32mI (169914) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (169914) EVAC: T=23.0 H=44.6 D=43.4[0m
+[0;32mI (175114) EVAC: SI7021 ONLINE[0m
+[0;32mI (175124) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (175124) EVAC: T=23.0 H=44.5 D=128.9[0m
+[0;32mI (180334) EVAC: SI7021 ONLINE[0m
+[0;32mI (180354) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (180354) EVAC: T=23.0 H=44.6 D=128.9[0m
+[0;32mI (185554) EVAC: SI7021 ONLINE[0m
+[0;32mI (185564) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (185564) EVAC: T=23.0 H=44.7 D=128.9[0m
+[0;32mI (190774) EVAC: SI7021 ONLINE[0m
+[0;32mI (190784) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (190784) EVAC: T=23.0 H=44.8 D=79.1[0m
+[0;32mI (195984) EVAC: SI7021 ONLINE[0m
+[0;32mI (195994) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (195994) EVAC: T=23.0 H=44.8 D=72.1[0m
+[0;32mI (201194) EVAC: SI7021 ONLINE[0m
+[0;32mI (201204) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (201204) EVAC: T=23.0 H=44.8 D=71.9[0m
+[0;32mI (206404) EVAC: SI7021 ONLINE[0m
+[0;32mI (206424) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (206424) EVAC: T=23.0 H=44.7 D=128.9[0m
+[0;32mI (211624) EVAC: SI7021 ONLINE[0m
+[0;32mI (211644) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (211644) EVAC: T=23.0 H=44.7 D=128.8[0m
+[0;32mI (216844) EVAC: SI7021 ONLINE[0m
+[0;32mI (216854) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (216854) EVAC: T=23.0 H=44.6 D=66.8[0m
+[0;32mI (222054) EVAC: SI7021 ONLINE[0m
+[0;32mI (222064) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (222064) EVAC: T=23.0 H=44.5 D=90.1[0m
+[0;32mI (227264) EVAC: SI7021 ONLINE[0m
+[0;32mI (227274) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (227274) EVAC: T=23.0 H=44.4 D=102.1[0m
+[0;32mI (232474) EVAC: SI7021 ONLINE[0m
+[0;32mI (232484) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (232484) EVAC: T=23.0 H=44.4 D=44.1[0m
+[0;32mI (237684) EVAC: SI7021 ONLINE[0m
+[0;32mI (237694) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (237694) EVAC: T=22.9 H=44.3 D=128.9[0m
+[0;32mI (242904) EVAC: SI7021 ONLINE[0m
+[0;32mI (242914) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (242914) EVAC: T=22.9 H=44.3 D=128.9[0m
+[0;32mI (248124) EVAC: SI7021 ONLINE[0m
+[0;32mI (248134) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (248134) EVAC: T=22.9 H=44.2 D=128.4[0m
+[0;32mI (253344) EVAC: SI7021 ONLINE[0m
+[0;32mI (253354) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (253354) EVAC: T=22.9 H=44.2 D=129.3[0m
+[0;32mI (258564) EVAC: SI7021 ONLINE[0m
+[0;32mI (258574) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (258574) EVAC: T=23.0 H=44.5 D=129.3[0m
+[0;32mI (263784) EVAC: SI7021 ONLINE[0m
+[0;32mI (263794) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (263794) EVAC: T=22.9 H=44.6 D=88.2[0m
+[0;32mI (268994) EVAC: SI7021 ONLINE[0m
+[0;32mI (269004) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (269004) EVAC: T=22.9 H=44.5 D=59.9[0m
+[0;32mI (274204) EVAC: SI7021 ONLINE[0m
+[0;32mI (274214) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (274224) EVAC: T=22.9 H=44.4 D=129.3[0m
+[0;32mI (279424) EVAC: SI7021 ONLINE[0m
+[0;32mI (279434) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (279434) EVAC: T=23.0 H=44.4 D=129.3[0m
+[0;32mI (284644) EVAC: SI7021 ONLINE[0m
+[0;32mI (284654) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (284654) EVAC: T=22.9 H=44.4 D=43.4[0m
+[0;32mI (289854) EVAC: SI7021 ONLINE[0m
+[0;32mI (289864) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (289864) EVAC: T=23.0 H=44.3 D=48.0[0m
+[0;32mI (295064) EVAC: SI7021 ONLINE[0m
+[0;32mI (295084) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (295084) EVAC: T=22.9 H=44.3 D=118.4[0m
+[0;32mI (300284) EVAC: SI7021 ONLINE[0m
+[0;32mI (300294) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (300294) EVAC: T=22.9 H=44.3 D=64.4[0m
+[0;32mI (305494) EVAC: SI7021 ONLINE[0m
+[0;32mI (305504) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (305504) EVAC: T=23.0 H=44.3 D=37.4[0m
+[0;32mI (310704) EVAC: SI7021 ONLINE[0m
+[0;32mI (310714) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (310714) EVAC: T=22.9 H=44.4 D=128.8[0m
+[0;32mI (315924) EVAC: SI7021 ONLINE[0m
+[0;32mI (315934) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (315934) EVAC: T=23.0 H=44.5 D=92.0[0m
+[0;32mI (321134) EVAC: SI7021 ONLINE[0m
+[0;32mI (321144) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (321144) EVAC: T=22.9 H=44.5 D=55.6[0m
+[0;32mI (326344) EVAC: SI7021 ONLINE[0m
+[0;32mI (326354) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (326354) EVAC: T=22.9 H=44.5 D=51.5[0m
+[0;32mI (331554) EVAC: SI7021 ONLINE[0m
+[0;32mI (331564) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (331564) EVAC: T=22.9 H=44.5 D=129.7[0m
+[0;32mI (336774) EVAC: SI7021 ONLINE[0m
+[0;32mI (336794) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (336794) EVAC: T=23.0 H=44.5 D=127.4[0m
+[0;32mI (341994) EVAC: SI7021 ONLINE[0m
+[0;32mI (342004) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (342004) EVAC: T=22.9 H=44.6 D=69.9[0m
+[0;32mI (347204) EVAC: SI7021 ONLINE[0m
+[0;32mI (347214) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (347214) EVAC: T=23.0 H=44.6 D=129.3[0m
+[0;32mI (352424) EVAC: SI7021 ONLINE[0m
+[0;32mI (352434) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (352434) EVAC: T=22.9 H=44.5 D=86.9[0m
+[0;32mI (357644) EVAC: SI7021 ONLINE[0m
+[0;32mI (357654) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (357654) EVAC: T=23.0 H=44.5 D=36.0[0m
+[0;32mI (362854) EVAC: SI7021 ONLINE[0m
+[0;32mI (362874) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (362874) EVAC: T=23.0 H=44.4 D=94.9[0m
+[0;32mI (368074) EVAC: SI7021 ONLINE[0m
+[0;32mI (368084) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (368084) EVAC: T=23.0 H=44.4 D=128.5[0m
+[0;32mI (373294) EVAC: SI7021 ONLINE[0m
+[0;32mI (373304) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (373304) EVAC: T=23.0 H=44.4 D=82.2[0m
+[0;32mI (378504) EVAC: SI7021 ONLINE[0m
+[0;32mI (378514) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (378514) EVAC: T=23.0 H=44.6 D=41.6[0m
+[0;32mI (383714) EVAC: SI7021 ONLINE[0m
+[0;32mI (383724) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (383724) EVAC: T=23.0 H=44.7 D=68.5[0m
+[1;31mE (389724) i2c.master: I2C software timeout[0m
+[0;33mW (389724) i2cdev: [0x40 at 0] I2C op failed (Try 0, Handle 0x3ffca7bc): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (389724) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (389724) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffca7bc after permanent error[0m
+[0;33mW (389774) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (389774) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffc7c18, Speed: 400000 Hz).[0m
+[0;33mW (389774) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (389774) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (390784) i2c.master: I2C software timeout[0m
+[0;33mW (390784) i2cdev: [0x40 at 0] I2C op failed (Try 1, Handle 0x3ffc7c18): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (390784) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (390784) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffc7c18 after permanent error[0m
+[0;33mW (390874) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (390874) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffc7c18, Speed: 400000 Hz).[0m
+[0;33mW (390874) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (390874) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (391884) i2c.master: I2C software timeout[0m
+[0;33mW (391884) i2cdev: [0x40 at 0] I2C op failed (Try 2, Handle 0x3ffc7c18): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (391884) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (391884) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffc7c18 after permanent error[0m
+[0;33mW (392054) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (392054) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffc7c18, Speed: 400000 Hz).[0m
+[0;33mW (392054) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (392054) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (393064) i2c.master: I2C software timeout[0m
+[0;33mW (393064) i2cdev: [0x40 at 0] I2C op failed (Try 3, Handle 0x3ffc7c18): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (393064) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (393064) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffc7c18 after permanent error[0m
+[1;31mE (393074) i2cdev: [0x40 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;33mW (393094) EVAC: SI7021 OFFLINE[0m
+[0;32mI (393104) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (393104) EVAC: T=23.0 H=44.7 D=70.6[0m
+[0;32mI (398104) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (398104) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (398104) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (398314) EVAC: SI7021 ONLINE[0m
+[0;32mI (398324) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (398334) EVAC: T=23.1 H=45.4 D=129.7[0m
+[0;32mI (403534) EVAC: SI7021 ONLINE[0m
+[0;32mI (403554) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (403554) EVAC: T=23.1 H=45.4 D=129.3[0m
+[0;32mI (408754) EVAC: SI7021 ONLINE[0m
+[0;32mI (408764) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (408764) EVAC: T=23.1 H=45.2 D=85.2[0m
+[0;32mI (413974) EVAC: SI7021 ONLINE[0m
+[0;32mI (413984) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (413984) EVAC: T=23.2 H=45.1 D=129.7[0m
+[0;32mI (419194) EVAC: SI7021 ONLINE[0m
+[0;32mI (419204) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (419204) EVAC: T=23.1 H=45.1 D=129.2[0m
+[0;32mI (424414) EVAC: SI7021 ONLINE[0m
+[0;32mI (424424) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (424424) EVAC: T=23.1 H=44.9 D=128.9[0m
+[0;32mI (429634) EVAC: SI7021 ONLINE[0m
+[0;32mI (429644) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (429644) EVAC: T=23.1 H=44.7 D=129.3[0m
+[0;32mI (434854) EVAC: SI7021 ONLINE[0m
+[0;32mI (434864) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (434864) EVAC: T=23.2 H=44.6 D=59.5[0m
+[0;32mI (440064) EVAC: SI7021 ONLINE[0m
+[0;32mI (440074) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (440074) EVAC: T=23.1 H=44.7 D=128.9[0m
+[0;32mI (445284) EVAC: SI7021 ONLINE[0m
+[0;32mI (445294) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (445304) EVAC: T=23.2 H=44.9 D=128.9[0m
+[0;32mI (450504) EVAC: SI7021 ONLINE[0m
+[0;32mI (450524) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (450524) EVAC: T=23.1 H=45.3 D=128.9[0m
+[0;32mI (455724) EVAC: SI7021 ONLINE[0m
+[0;32mI (455734) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (455734) EVAC: T=23.1 H=45.7 D=128.9[0m
+[0;32mI (460944) EVAC: SI7021 ONLINE[0m
+[0;32mI (460964) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (460964) EVAC: T=23.1 H=46.0 D=128.0[0m
+[0;32mI (466164) EVAC: SI7021 ONLINE[0m
+[0;32mI (466174) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (466174) EVAC: T=23.1 H=46.1 D=65.3[0m
+[0;32mI (471374) EVAC: SI7021 ONLINE[0m
+[0;32mI (471384) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (471384) EVAC: T=23.1 H=46.0 D=129.3[0m
+[0;32mI (476594) EVAC: SI7021 ONLINE[0m
+[0;32mI (476604) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (476604) EVAC: T=23.1 H=45.8 D=128.9[0m
+[0;32mI (481814) EVAC: SI7021 ONLINE[0m
+[0;32mI (481824) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (481824) EVAC: T=23.2 H=45.5 D=58.7[0m
+[0;32mI (487024) EVAC: SI7021 ONLINE[0m
+[0;32mI (487034) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (487034) EVAC: T=23.1 H=45.2 D=128.9[0m
+[0;32mI (492244) EVAC: SI7021 ONLINE[0m
+[0;32mI (492254) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (492254) EVAC: T=23.2 H=44.9 D=129.3[0m
+[0;32mI (497464) EVAC: SI7021 ONLINE[0m
+[0;32mI (497484) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (497484) EVAC: T=23.1 H=44.7 D=129.3[0m
+[0;32mI (502684) EVAC: SI7021 ONLINE[0m
+[0;32mI (502694) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (502694) EVAC: T=23.1 H=44.4 D=67.7[0m
+[0;32mI (507894) EVAC: SI7021 ONLINE[0m
+[0;32mI (507914) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (507914) EVAC: T=23.1 H=44.2 D=128.9[0m
+[0;32mI (513114) EVAC: SI7021 ONLINE[0m
+[0;32mI (513124) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (513124) EVAC: T=23.1 H=44.2 D=4.0[0m
+[0;32mI (518324) EVAC: SI7021 ONLINE[0m
+[0;32mI (518344) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (518344) EVAC: T=23.1 H=44.5 D=128.9[0m
+[0;32mI (523544) EVAC: SI7021 ONLINE[0m
+[0;32mI (523564) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (523564) EVAC: T=23.2 H=44.9 D=128.9[0m
+[0;32mI (528764) EVAC: SI7021 ONLINE[0m
+[0;32mI (528784) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (528784) EVAC: T=23.3 H=45.2 D=117.5[0m
+[0;32mI (533984) EVAC: SI7021 ONLINE[0m
+[0;32mI (533994) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (533994) EVAC: T=23.2 H=45.2 D=129.3[0m
+[0;32mI (539204) EVAC: SI7021 ONLINE[0m
+[0;32mI (539214) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (539214) EVAC: T=23.3 H=44.9 D=128.8[0m
+[0;32mI (544424) EVAC: SI7021 ONLINE[0m
+[0;32mI (544434) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (544434) EVAC: T=23.3 H=44.6 D=129.3[0m
+[0;32mI (549644) EVAC: SI7021 ONLINE[0m
+[0;32mI (549654) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (549654) EVAC: T=23.3 H=44.5 D=129.3[0m
+[0;32mI (554864) EVAC: SI7021 ONLINE[0m
+[0;32mI (554874) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (554874) EVAC: T=23.2 H=44.4 D=86.1[0m
+[0;32mI (560084) EVAC: SI7021 ONLINE[0m
+[0;32mI (560104) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (560104) EVAC: T=23.2 H=44.2 D=129.3[0m
+[0;32mI (565304) EVAC: SI7021 ONLINE[0m
+[0;32mI (565314) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (565314) EVAC: T=23.2 H=44.0 D=81.7[0m
+[0;32mI (570514) EVAC: SI7021 ONLINE[0m
+[0;32mI (570524) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (570524) EVAC: T=23.2 H=43.9 D=55.6[0m
+[0;32mI (575724) EVAC: SI7021 ONLINE[0m
+[0;32mI (575744) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (575744) EVAC: T=23.2 H=43.8 D=124.6[0m
+[0;32mI (580944) EVAC: SI7021 ONLINE[0m
+[0;32mI (580954) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (580954) EVAC: T=23.2 H=43.7 D=54.8[0m
+[0;32mI (586154) EVAC: SI7021 ONLINE[0m
+[0;32mI (586174) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (586174) EVAC: T=23.2 H=44.0 D=102.9[0m
+[0;32mI (591374) EVAC: SI7021 ONLINE[0m
+[0;32mI (591384) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (591384) EVAC: T=23.2 H=44.2 D=128.8[0m
+[0;32mI (596594) EVAC: SI7021 ONLINE[0m
+[0;32mI (596604) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (596604) EVAC: T=23.2 H=44.4 D=128.9[0m
+[0;32mI (601814) EVAC: SI7021 ONLINE[0m
+[0;32mI (601824) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (601824) EVAC: T=23.2 H=44.4 D=128.9[0m
+[0;32mI (607034) EVAC: SI7021 ONLINE[0m
+[0;32mI (607044) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (607044) EVAC: T=23.2 H=44.3 D=128.9[0m
+[0;32mI (612254) EVAC: SI7021 ONLINE[0m
+[0;32mI (612264) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (612264) EVAC: T=23.2 H=44.2 D=128.4[0m
+[1;31mE (618274) i2c.master: I2C software timeout[0m
+[0;33mW (618274) i2cdev: [0x40 at 0] I2C op failed (Try 0, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (618274) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (618274) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (618324) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (618324) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (618324) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (618324) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (619334) i2c.master: I2C software timeout[0m
+[0;33mW (619334) i2cdev: [0x40 at 0] I2C op failed (Try 1, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (619334) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (619334) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (619424) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (619424) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (619424) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (619424) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (620434) i2c.master: I2C software timeout[0m
+[0;33mW (620434) i2cdev: [0x40 at 0] I2C op failed (Try 2, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (620434) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (620434) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (620604) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (620604) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (620604) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (620604) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (621614) i2c.master: I2C software timeout[0m
+[0;33mW (621614) i2cdev: [0x40 at 0] I2C op failed (Try 3, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (621614) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (621614) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[1;31mE (621624) i2cdev: [0x40 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;33mW (621644) EVAC: SI7021 OFFLINE[0m
+[0;32mI (621654) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (621654) EVAC: T=23.2 H=44.2 D=129.3[0m
+[0;32mI (626654) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (626654) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (626654) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (627664) i2c.master: I2C software timeout[0m
+[0;33mW (627664) i2cdev: [0x40 at 0] I2C op failed (Try 0, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (627664) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (627664) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (627714) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (627714) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (627714) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (627714) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (628724) i2c.master: I2C software timeout[0m
+[0;33mW (628724) i2cdev: [0x40 at 0] I2C op failed (Try 1, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (628724) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (628724) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (628814) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (628814) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (628814) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (628814) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (629824) i2c.master: I2C software timeout[0m
+[0;33mW (629824) i2cdev: [0x40 at 0] I2C op failed (Try 2, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (629824) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (629824) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (629994) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (629994) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (629994) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (629994) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (631004) i2c.master: I2C software timeout[0m
+[0;33mW (631004) i2cdev: [0x40 at 0] I2C op failed (Try 3, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (631004) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (631004) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[1;31mE (631014) i2cdev: [0x40 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;33mW (631034) EVAC: SI7021 OFFLINE[0m
+[0;32mI (631044) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (631044) EVAC: T=23.2 H=44.2 D=113.2[0m
+[0;32mI (636044) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (636044) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (636044) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (637054) i2c.master: I2C software timeout[0m
+[0;33mW (637054) i2cdev: [0x40 at 0] I2C op failed (Try 0, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (637054) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (637054) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (637104) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (637104) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (637104) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (637104) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (638114) i2c.master: I2C software timeout[0m
+[0;33mW (638114) i2cdev: [0x40 at 0] I2C op failed (Try 1, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (638114) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (638114) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (638204) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (638204) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (638204) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (638204) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (639214) i2c.master: I2C software timeout[0m
+[0;33mW (639214) i2cdev: [0x40 at 0] I2C op failed (Try 2, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (639214) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (639214) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (639384) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (639384) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (639384) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (639384) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (640394) i2c.master: I2C software timeout[0m
+[0;33mW (640394) i2cdev: [0x40 at 0] I2C op failed (Try 3, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (640394) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (640394) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[1;31mE (640404) i2cdev: [0x40 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;33mW (640424) EVAC: SI7021 OFFLINE[0m
+[0;32mI (640434) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (640434) EVAC: T=23.2 H=44.2 D=129.3[0m
+[0;32mI (645434) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (645434) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (645434) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (645644) EVAC: SI7021 ONLINE[0m
+[0;32mI (645664) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (645664) EVAC: T=23.2 H=44.2 D=115.5[0m
+[0;32mI (650864) EVAC: SI7021 ONLINE[0m
+[0;32mI (650874) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (650874) EVAC: T=23.2 H=44.2 D=128.8[0m
+[0;32mI (656084) EVAC: SI7021 ONLINE[0m
+[0;32mI (656094) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (656094) EVAC: T=23.2 H=44.2 D=128.9[0m
+[0;32mI (661304) EVAC: SI7021 ONLINE[0m
+[0;32mI (661314) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (661314) EVAC: T=23.2 H=44.2 D=128.5[0m
+[0;32mI (666524) EVAC: SI7021 ONLINE[0m
+[0;32mI (666544) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (666544) EVAC: T=23.2 H=44.2 D=128.9[0m
+[0;32mI (671744) EVAC: SI7021 ONLINE[0m
+[0;32mI (671754) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (671754) EVAC: T=23.3 H=44.2 D=128.9[0m
+[0;32mI (676964) EVAC: SI7021 ONLINE[0m
+[0;32mI (676974) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (676974) EVAC: T=23.3 H=44.3 D=69.1[0m
+[0;32mI (682174) EVAC: SI7021 ONLINE[0m
+[0;32mI (682194) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (682194) EVAC: T=23.2 H=44.4 D=128.9[0m
+[0;32mI (687394) EVAC: SI7021 ONLINE[0m
+[0;32mI (687404) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (687404) EVAC: T=23.2 H=44.5 D=91.7[0m
+[0;32mI (692614) EVAC: SI7021 ONLINE[0m
+[0;32mI (692624) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (692624) EVAC: T=23.2 H=44.4 D=129.3[0m
+[0;32mI (697834) EVAC: SI7021 ONLINE[0m
+[0;32mI (697844) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (697844) EVAC: T=23.2 H=44.3 D=128.9[0m
+[0;32mI (703054) EVAC: SI7021 ONLINE[0m
+[0;32mI (703064) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (703064) EVAC: T=23.2 H=44.1 D=128.9[0m
+[0;32mI (708274) EVAC: SI7021 ONLINE[0m
+[0;32mI (708294) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (708294) EVAC: T=23.2 H=44.0 D=106.9[0m
+[0;32mI (713494) EVAC: SI7021 ONLINE[0m
+[0;32mI (713504) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (713504) EVAC: T=23.2 H=44.1 D=80.1[0m
+[0;32mI (718714) EVAC: SI7021 ONLINE[0m
+[0;32mI (718724) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (718724) EVAC: T=23.2 H=44.3 D=4.0[0m
+[0;32mI (723924) EVAC: SI7021 ONLINE[0m
+[0;32mI (723944) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (723944) EVAC: T=23.2 H=44.5 D=128.9[0m
+[0;32mI (729144) EVAC: SI7021 ONLINE[0m
+[0;32mI (729154) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (729154) EVAC: T=23.2 H=44.4 D=128.9[0m
+[0;33mW (734164) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (734164) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (734174) i2c.master: I2C hardware timeout detected[0m
+[0;33mW (734174) i2cdev: [0x40 at 0] I2C op failed (Try 0, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (734184) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (734194) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (734244) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (734244)E (735254) i2c.master: I2C software timeout[0m
+[0;33mW (735254) i2cdev: [0x40 at 0] I2C op failed (Try 1, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (735254) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (735254) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (735344) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (735344) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (735344) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (735344) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (736354) i2c.master: I2C software timeout[0m
+[0;33mW (736354) i2cdev: [0x40 at 0] I2C op failed (Try 2, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (736354) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (736354) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[0;33mW (736524) i2cdev: [0x40 at 0] Retrying operation...[0m
+[0;32mI (736524) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (736524) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (736524) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (737534) i2c.master: I2C software timeout[0m
+[0;33mW (737534) i2cdev: [0x40 at 0] I2C op failed (Try 3, Handle 0x3ffbc77c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (737534) i2cdev: [0x40 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (737534) i2cdev: [0x40 at 0] Removing potentially corrupted device handle 0x3ffbc77c after permanent error[0m
+[1;31mE (737544) i2cdev: [0x40 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;33mW (737564) EVAC: SI7021 OFFLINE[0m
+[0;32mI (737574) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (737574) EVAC: T=23.2 H=44.4 D=128.9[0m
+[0;32mI (742574) i2cdev: [0x40 at 0] Device added successfully (Device Handle: 0x3ffbc77c, Speed: 400000 Hz).[0m
+[0;33mW (742574) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (742574) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (742784) EVAC: SI7021 ONLINE[0m
+[0;32mI (742794) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (742804) EVAC: T=23.4 H=45.5 D=94.7[0m
+[0;32mI (748004) EVAC: SI7021 ONLINE[0m
+[0;32mI (748024) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (748024) EVAC: T=23.4 H=46.0 D=129.0[0m
+[0;32mI (753224) EVAC: SI7021 ONLINE[0m
+[0;32mI (753234) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (753234) EVAC: T=23.5 H=46.0 D=129.8[0m
+[0;32mI (758444) EVAC: SI7021 ONLINE[0m
+[0;32mI (758454) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (758454) EVAC: T=23.5 H=46.2 D=128.9[0m
+[0;32mI (763664) EVAC: SI7021 ONLINE[0m
+[0;32mI (763684) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (763684) EVAC: T=23.5 H=46.2 D=128.9[0m
+[0;32mI (768884) EVAC: SI7021 ONLINE[0m
+[0;32mI (768904) EVAC: HC_SR04 ONLINE[0m
+[0;32mI (768904) EVAC: T=23.5 H=46.0 D=129.3[0m
