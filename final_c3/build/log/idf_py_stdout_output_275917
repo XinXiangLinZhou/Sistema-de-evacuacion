@@ -1,0 +1,88 @@
+Command: ninja flash
+[1/5] cd /home/jiahui/SED/esp-workspace/final_c3/build/esp-idf/esptool_py && /home/jiahui/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/jiahui/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/jiahui/SED/esp-workspace/final_c3/build/partition_table/partition-table.bin /home/jiahui/SED/esp-workspace/final_c3/build/final_c3.bin
+final_c3.bin binary size 0x1190d0 bytes. Smallest app partition is 0x177000 bytes. 0x5df30 bytes (25%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/jiahui/SED/esp-workspace/final_c3/build/bootloader/esp-idf/esptool_py && /home/jiahui/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/jiahui/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/jiahui/SED/esp-workspace/final_c3/build/bootloader/bootloader.bin
+Bootloader binary size 0x51e0 bytes. 0x2e20 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/jiahui/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/jiahui/esp-idf -D "SERIAL_TOOL=/home/jiahui/.espressif/python_env/idf5.5_py3.12_env/bin/python;;/home/jiahui/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/jiahui/SED/esp-workspace/final_c3/build -P /home/jiahui/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/ttyACM1 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 final_c3.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.12.dev1
+Serial port /dev/ttyACM1
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 64:e8:33:d9:f4:48
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00129fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+SHA digest in image updated
+Compressed 20960 bytes to 13266...
+Writing at 0x00000000... (100 %)
+Wrote 20960 bytes (13266 compressed) at 0x00000000 in 0.3 seconds (effective 510.7 kbit/s)...
+Hash of data verified.
+Compressed 1151184 bytes to 665797...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001ca4b... (4 %)
+Writing at 0x0002955b... (7 %)
+Writing at 0x0002fb27... (9 %)
+Writing at 0x0003495d... (12 %)
+Writing at 0x00039bb3... (14 %)
+Writing at 0x0003fe45... (17 %)
+Writing at 0x0004a070... (19 %)
+Writing at 0x00050afd... (21 %)
+Writing at 0x0005755a... (24 %)
+Writing at 0x0005f6a4... (26 %)
+Writing at 0x00066ab8... (29 %)
+Writing at 0x0006dd65... (31 %)
+Writing at 0x00074c38... (34 %)
+Writing at 0x0007c6df... (36 %)
+Writing at 0x00083492... (39 %)
+Writing at 0x00089b94... (41 %)
+Writing at 0x000904ae... (43 %)
+Writing at 0x00097651... (46 %)
+Writing at 0x0009dc5f... (48 %)
+Writing at 0x000a43f0... (51 %)
+Writing at 0x000aa01d... (53 %)
+Writing at 0x000afb74... (56 %)
+Writing at 0x000b63c0... (58 %)
+Writing at 0x000bc674... (60 %)
+Writing at 0x000c2720... (63 %)
+Writing at 0x000c88b7... (65 %)
+Writing at 0x000cee2e... (68 %)
+Writing at 0x000d59a1... (70 %)
+Writing at 0x000dcba2... (73 %)
+Writing at 0x000e3acd... (75 %)
+Writing at 0x000ea95a... (78 %)
+Writing at 0x000f0cb0... (80 %)
+Writing at 0x000f6fbf... (82 %)
+Writing at 0x000fd427... (85 %)
+Writing at 0x001033f7... (87 %)
+Writing at 0x00108ef4... (90 %)
+Writing at 0x00110dcb... (92 %)
+Writing at 0x0011774e... (95 %)
+Writing at 0x0011e76b... (97 %)
+Writing at 0x00124d4a... (100 %)
+Wrote 1151184 bytes (665797 compressed) at 0x00010000 in 8.4 seconds (effective 1090.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 128...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (128 compressed) at 0x00008000 in 0.0 seconds (effective 537.9 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 710.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

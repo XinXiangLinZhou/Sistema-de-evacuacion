@@ -1,0 +1,1561 @@
+Command: /home/jiahui/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/jiahui/esp-idf/tools/idf_monitor.py -p /dev/ttyACM1 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/jiahui/SED/esp-workspace/final_c3/build/final_c3.elf /home/jiahui/SED/esp-workspace/final_c3/build/bootloader/bootloader.elf -m '/home/jiahui/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/jiahui/esp-idf/tools/idf.py' '-p' '/dev/ttyACM1'
+[0;32mI (136) esp_image: segment 1: paddr=0004878c vaddr=3fc95a00 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384ab2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x155c
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fa4
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  5 2026 18:37:44[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (59) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (66) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (79) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=38764h (231268) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0004878c vaddr=3fc95a00 size=034a4h ( 13476) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0004bc38 vaddr=40380000 size=043e0h ( 17376) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=c7b48h (817992) map[0m
+[0;32mI (271) esp_image: segment 4: paddr=00117b70 vaddr=403843e0 size=1150ch ( 70924) load[0m
+[0;32mI (284) esp_image: segment 5: paddr=00129084 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (291) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (291) boot: Disabling RNG early entropy source...[0m
+[0;32mI (302) cpu_start: Unicore app[0m
+[0;32mI (311) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (313) app_init: Application information:[0m
+[0;32mI (317) app_init: Project name:     final_c3[0m
+[0;32mI (321) app_init: App version:      1[0m
+[0;32mI (324) app_init: Compile time:     May  5 2026 18:37:36[0m
+[0;32mI (329) app_init: ELF file SHA256:  176c3bf53...[0m
+[0;32mI (334) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (337) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (341) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (345) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (349) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (355) heap_init: At 3FC9DA10 len 000225F0 (137 KiB): RAM[0m
+[0;32mI (360) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (367) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (373) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (379) spi_flash: detected chip: generic[0m
+[0;32mI (382) spi_flash: flash io: dio[0m
+[0;32mI (385) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (391) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (398) main_task: Started on CPU0[0m
+[0;32mI (398) main_task: Calling app_main()[0m
+
+--- 系统启动 ---
+固件版本: 1.0.0
+当前运行分区: ota_0
+分区地址: 0x00010000
+[0;32mI (418) pp: pp rom version: 9387209[0m
+[0;32mI (418) net80211: net80211 rom version: 9387209[0m
+[0;32mI (428) wifi:wifi driver task: 3fca71b0, prio:23, stack:6656, core=0[0m
+[0;32mI (428) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (428) wifi:wifi certification version: v7.0[0m
+[0;32mI (428) wifi:config NVS flash: enabled[0m
+[0;32mI (428) wifi:config nano formatting: disabled[0m
+[0;32mI (438) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (448) wifi:Init management short buffer num: 32[0m
+[0;32mI (448) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (458) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (458) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (458) wifi:Init static rx buffer num: 10[0m
+[0;32mI (468) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (468) wifi_init: rx ba win: 6[0m
+[0;32mI (468) wifi_init: accept mbox: 6[0m
+[0;32mI (478) wifi_init: tcpip mbox: 32[0m
+[0;32mI (478) wifi_init: udp mbox: 6[0m
+[0;32mI (478) wifi_init: tcp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp tx win: 5760[0m
+[0;32mI (488) wifi_init: tcp rx win: 5760[0m
+[0;32mI (488) wifi_init: tcp mss: 1440[0m
+[0;32mI (498) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (498) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (498) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (508) phy_init: phy_version 1232,d493f299,Aug 25 2025,19:01:20[0m
+[0;32mI (558) wifi:mode : sta (64:e8:33:d9:f4:48)[0m
+[0;32mI (558) wifi:enable tsf[0m
+[0;32mI (558) WIFI: Conectando a prac4.1...[0m
+[0;32mI (568) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (568) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (578) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (578) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (778) wifi:connected with prac4.1, aid = 4, channel 6, BW20, bssid = e2:ca:ba:9a:b4:46[0m
+[0;32mI (778) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (788) wifi:pm start, type: 1[0m
+
+[0;32mI (788) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (798) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (858) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1168) wifi:<ba-add>idx:0 (ifx:0, e2:ca:ba:9a:b4:46), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1838) esp_netif_handlers: sta ip: 172.20.10.5, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (10558) MENDER: Starting Mender: 64:e8:33:d9:f4:48[0m
+[0;32mI (10558) mender: ./external/mender-mcu-client/platform/storage/esp-idf/nvs/src/mender-storage.c (157): Deployment data not available[0m
+[0;32mI (10728) FINAL_C3: Solo WiFi OK[0m
+[0;32mI (10728) main_task: Returned from app_main()[0m
+[0;32mI (10948) FINAL_C3: Conectado al Broker[0m
+[0;32mI (11218) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (12238) MENDER: Auth OK[0m
+[0;32mI (12238) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (12938) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (13768) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (13768) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (13768) FINAL_C3: Temperatura: 26[0m
+[0;32mI (13768) FINAL_C3: TEMP WARNING![0m
+[0;32mI (13978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (13988) FINAL_C3: Humedad: 27[0m
+[0;32mI (13988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (18988) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (18988) FINAL_C3: Temperatura: 26[0m
+[0;32mI (18988) FINAL_C3: TEMP WARNING![0m
+[0;32mI (19258) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (19268) FINAL_C3: Humedad: 27[0m
+[0;32mI (19268) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (24208) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (24208) FINAL_C3: Temperatura: 26[0m
+[0;32mI (24208) FINAL_C3: TEMP WARNING![0m
+[0;32mI (24228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (24228) FINAL_C3: Humedad: 27[0m
+[0;32mI (24228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (29528) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (29528) FINAL_C3: Temperatura: 26[0m
+[0;32mI (29528) FINAL_C3: TEMP WARNING![0m
+[0;32mI (29738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (29738) FINAL_C3: Humedad: 27[0m
+[0;32mI (29738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (34648) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (34648) FINAL_C3: Temperatura: 26[0m
+[0;32mI (34648) FINAL_C3: TEMP WARNING![0m
+[0;32mI (34728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (34728) FINAL_C3: Humedad: 27[0m
+[0;32mI (34728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (39868) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (39878) FINAL_C3: Temperatura: 26[0m
+[0;32mI (39878) FINAL_C3: TEMP WARNING![0m
+[0;32mI (39978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (39978) FINAL_C3: Humedad: 27[0m
+[0;32mI (39978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (45098) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (45098) FINAL_C3: Temperatura: 26[0m
+[0;32mI (45098) FINAL_C3: TEMP WARNING![0m
+[0;32mI (45228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (45228) FINAL_C3: Humedad: 27[0m
+[0;32mI (45228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (50328) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (50328) FINAL_C3: Temperatura: 26[0m
+[0;32mI (50328) FINAL_C3: TEMP WARNING![0m
+[0;32mI (50478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (50478) FINAL_C3: Humedad: 27[0m
+[0;32mI (50478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (55548) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (55548) FINAL_C3: Temperatura: 26[0m
+[0;32mI (55548) FINAL_C3: TEMP WARNING![0m
+[0;32mI (55748) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (55748) FINAL_C3: Humedad: 27[0m
+[0;32mI (55748) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (60968) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (60968) FINAL_C3: Temperatura: 26[0m
+[0;32mI (60968) FINAL_C3: TEMP WARNING![0m
+[0;32mI (61008) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (61008) FINAL_C3: Humedad: 27[0m
+[0;32mI (61008) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (65988) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (65988) FINAL_C3: Temperatura: 26[0m
+[0;32mI (65988) FINAL_C3: TEMP WARNING![0m
+[0;32mI (66238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (66238) FINAL_C3: Humedad: 27[0m
+[0;32mI (66238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (71208) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (71208) FINAL_C3: Temperatura: 26[0m
+[0;32mI (71208) FINAL_C3: TEMP WARNING![0m
+[0;32mI (71228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (71228) FINAL_C3: Humedad: 27[0m
+[0;32mI (71228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (72248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (72938) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (73868) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (76538) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (76538) FINAL_C3: Temperatura: 26[0m
+[0;32mI (76538) FINAL_C3: TEMP WARNING![0m
+[0;32mI (76738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (76738) FINAL_C3: Humedad: 27[0m
+[0;32mI (76738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (81758) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (81758) FINAL_C3: Temperatura: 26[0m
+[0;32mI (81758) FINAL_C3: TEMP WARNING![0m
+[0;32mI (81978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (81978) FINAL_C3: Humedad: 27[0m
+[0;32mI (81978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (86768) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (86768) FINAL_C3: Temperatura: 26[0m
+[0;32mI (86768) FINAL_C3: TEMP WARNING![0m
+[0;32mI (86978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (86978) FINAL_C3: Humedad: 27[0m
+[0;32mI (86978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (92038) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (92038) FINAL_C3: Temperatura: 26[0m
+[0;32mI (92038) FINAL_C3: TEMP WARNING![0m
+[0;32mI (92238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (92238) FINAL_C3: Humedad: 27[0m
+[0;32mI (92238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (97218) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (97218) FINAL_C3: Temperatura: 26[0m
+[0;32mI (97218) FINAL_C3: TEMP WARNING![0m
+[0;32mI (97228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (97228) FINAL_C3: Humedad: 27[0m
+[0;32mI (97228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (102538) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (102538) FINAL_C3: Temperatura: 26[0m
+[0;32mI (102538) FINAL_C3: TEMP WARNING![0m
+[0;32mI (102738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (102738) FINAL_C3: Humedad: 27[0m
+[0;32mI (102738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (107768) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (107768) FINAL_C3: Temperatura: 26[0m
+[0;32mI (107768) FINAL_C3: TEMP WARNING![0m
+[0;32mI (108168) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 30[0m
+[0;32mI (108178) FINAL_C3: Humedad: 30[0m
+[0;32mI (108178) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (112988) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (112988) FINAL_C3: Temperatura: 26[0m
+[0;32mI (112988) FINAL_C3: TEMP WARNING![0m
+[0;32mI (113498) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 35[0m
+[0;32mI (113498) FINAL_C3: Humedad: 35[0m
+[0;32mI (113498) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (118208) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (118208) FINAL_C3: Temperatura: 27[0m
+[0;32mI (118208) FINAL_C3: TEMP WARNING![0m
+[0;32mI (118238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 40[0m
+[0;32mI (118238) FINAL_C3: Humedad: 40[0m
+[0;32mI (118238) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (123528) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (123538) FINAL_C3: Temperatura: 27[0m
+[0;32mI (123538) FINAL_C3: TEMP WARNING![0m
+[0;32mI (123738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 46[0m
+[0;32mI (123748) FINAL_C3: Humedad: 46[0m
+[0;32mI (123748) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (128758) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (128758) FINAL_C3: Temperatura: 27[0m
+[0;32mI (128758) FINAL_C3: TEMP WARNING![0m
+[0;32mI (129168) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 51[0m
+[0;32mI (129168) FINAL_C3: Humedad: 51[0m
+[0;32mI (129168) FINAL_C3: HUMEDAD CRITICA![0m
+[0;32mI (132248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (133148) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (133778) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (133778) FINAL_C3: Temperatura: 27[0m
+[0;32mI (133778) FINAL_C3: TEMP WARNING![0m
+[0;32mI (133988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 56[0m
+[0;32mI (133988) FINAL_C3: Humedad: 56[0m
+[0;32mI (133988) FINAL_C3: HUMEDAD CRITICA![0m
+[0;32mI (134078) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (139098) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (139098) FINAL_C3: Temperatura: 27[0m
+[0;32mI (139098) FINAL_C3: TEMP WARNING![0m
+[0;32mI (139228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 59[0m
+[0;32mI (139228) FINAL_C3: Humedad: 59[0m
+[0;32mI (139228) FINAL_C3: HUMEDAD CRITICA![0m
+[0;32mI (144318) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (144318) FINAL_C3: Temperatura: 27[0m
+[0;32mI (144318) FINAL_C3: TEMP WARNING![0m
+[0;32mI (144478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 57[0m
+[0;32mI (144478) FINAL_C3: Humedad: 57[0m
+[0;32mI (144478) FINAL_C3: HUMEDAD CRITICA![0m
+[0;32mI (149548) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (149548) FINAL_C3: Temperatura: 27[0m
+[0;32mI (149548) FINAL_C3: TEMP WARNING![0m
+[0;32mI (149558) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 53[0m
+[0;32mI (149558) FINAL_C3: Humedad: 53[0m
+[0;32mI (149558) FINAL_C3: HUMEDAD CRITICA![0m
+[0;32mI (154768) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (154768) FINAL_C3: Temperatura: 27[0m
+[0;32mI (154768) FINAL_C3: TEMP WARNING![0m
+[0;32mI (155198) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 48[0m
+[0;32mI (155198) FINAL_C3: Humedad: 48[0m
+[0;32mI (155198) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (159888) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (159888) FINAL_C3: Temperatura: 27[0m
+[0;32mI (159888) FINAL_C3: TEMP WARNING![0m
+[0;32mI (159988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 45[0m
+[0;32mI (159988) FINAL_C3: Humedad: 45[0m
+[0;32mI (159988) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (165308) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (165308) FINAL_C3: Temperatura: 27[0m
+[0;32mI (165308) FINAL_C3: TEMP WARNING![0m
+[0;32mI (165478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 42[0m
+[0;32mI (165478) FINAL_C3: Humedad: 42[0m
+[0;32mI (165478) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (170448) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (170448) FINAL_C3: Temperatura: 27[0m
+[0;32mI (170448) FINAL_C3: TEMP WARNING![0m
+[0;32mI (170478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 39[0m
+[0;32mI (170478) FINAL_C3: Humedad: 39[0m
+[0;32mI (170478) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (175558) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (175558) FINAL_C3: Temperatura: 26[0m
+[0;32mI (175558) FINAL_C3: TEMP WARNING![0m
+[0;32mI (175768) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 38[0m
+[0;32mI (175768) FINAL_C3: Humedad: 38[0m
+[0;32mI (175768) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (180778) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (180778) FINAL_C3: Temperatura: 26[0m
+[0;32mI (180778) FINAL_C3: TEMP WARNING![0m
+[0;32mI (180798) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 36[0m
+[0;32mI (180798) FINAL_C3: Humedad: 36[0m
+[0;32mI (180798) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (185998) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (185998) FINAL_C3: Temperatura: 26[0m
+[0;32mI (185998) FINAL_C3: TEMP WARNING![0m
+[0;32mI (186238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 35[0m
+[0;32mI (186238) FINAL_C3: Humedad: 35[0m
+[0;32mI (186238) FINAL_C3: HUMEDAD WARNING![0m
+[0;32mI (191338) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (191338) FINAL_C3: Temperatura: 26[0m
+[0;32mI (191338) FINAL_C3: TEMP WARNING![0m
+[0;32mI (191488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 34[0m
+[0;32mI (191488) FINAL_C3: Humedad: 34[0m
+[0;32mI (191488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (192248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (193578) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (194598) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (196468) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (196468) FINAL_C3: Temperatura: 26[0m
+[0;32mI (196468) FINAL_C3: TEMP WARNING![0m
+[0;32mI (196488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 33[0m
+[0;32mI (196488) FINAL_C3: Humedad: 33[0m
+[0;32mI (196488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (201668) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (201668) FINAL_C3: Temperatura: 26[0m
+[0;32mI (201668) FINAL_C3: TEMP WARNING![0m
+[0;32mI (201888) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 32[0m
+[0;32mI (201888) FINAL_C3: Humedad: 32[0m
+[0;32mI (201888) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (206788) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (206788) FINAL_C3: Temperatura: 26[0m
+[0;32mI (206788) FINAL_C3: TEMP WARNING![0m
+[0;32mI (206988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 32[0m
+[0;32mI (206988) FINAL_C3: Humedad: 32[0m
+[0;32mI (206988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (212108) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (212108) FINAL_C3: Temperatura: 26[0m
+[0;32mI (212108) FINAL_C3: TEMP WARNING![0m
+[0;32mI (212238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 32[0m
+[0;32mI (212238) FINAL_C3: Humedad: 32[0m
+[0;32mI (212238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (217438) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (217438) FINAL_C3: Temperatura: 26[0m
+[0;32mI (217438) FINAL_C3: TEMP WARNING![0m
+[0;32mI (217478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 31[0m
+[0;32mI (217478) FINAL_C3: Humedad: 31[0m
+[0;32mI (217478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (222668) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (222668) FINAL_C3: Temperatura: 26[0m
+[0;32mI (222678) FINAL_C3: TEMP WARNING![0m
+[0;32mI (222738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 31[0m
+[0;32mI (222738) FINAL_C3: Humedad: 31[0m
+[0;32mI (222738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (227668) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (227678) FINAL_C3: Temperatura: 26[0m
+[0;32mI (227678) FINAL_C3: TEMP WARNING![0m
+[0;32mI (227978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 31[0m
+[0;32mI (227978) FINAL_C3: Humedad: 31[0m
+[0;32mI (227978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (232898) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (232898) FINAL_C3: Temperatura: 26[0m
+[0;32mI (232898) FINAL_C3: TEMP WARNING![0m
+[0;32mI (233018) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 30[0m
+[0;32mI (233018) FINAL_C3: Humedad: 30[0m
+[0;32mI (233018) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (238118) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (238118) FINAL_C3: Temperatura: 26[0m
+[0;32mI (238118) FINAL_C3: TEMP WARNING![0m
+[0;32mI (238728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 30[0m
+[0;32mI (238728) FINAL_C3: Humedad: 30[0m
+[0;32mI (238728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (243448) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (243448) FINAL_C3: Temperatura: 26[0m
+[0;32mI (243448) FINAL_C3: TEMP WARNING![0m
+[0;32mI (243478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 30[0m
+[0;32mI (243478) FINAL_C3: Humedad: 30[0m
+[0;32mI (243478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (248668) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (248668) FINAL_C3: Temperatura: 26[0m
+[0;32mI (248668) FINAL_C3: TEMP WARNING![0m
+[0;32mI (248738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 30[0m
+[0;32mI (248738) FINAL_C3: Humedad: 30[0m
+[0;32mI (248738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (252248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (253078) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (253788) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (253788) FINAL_C3: Temperatura: 26[0m
+[0;32mI (253788) FINAL_C3: TEMP WARNING![0m
+[0;32mI (253998) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 29[0m
+[0;32mI (253998) FINAL_C3: Humedad: 29[0m
+[0;32mI (253998) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (254198) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (259318) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (259318) FINAL_C3: Temperatura: 26[0m
+[0;32mI (259318) FINAL_C3: TEMP WARNING![0m
+[0;32mI (259478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 29[0m
+[0;32mI (259478) FINAL_C3: Humedad: 29[0m
+[0;32mI (259478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (264338) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (264338) FINAL_C3: Temperatura: 26[0m
+[0;32mI (264338) FINAL_C3: TEMP WARNING![0m
+[0;32mI (265668) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 29[0m
+[0;32mI (265668) FINAL_C3: Humedad: 29[0m
+[0;32mI (265668) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (269558) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (269558) FINAL_C3: Temperatura: 26[0m
+[0;32mI (269558) FINAL_C3: TEMP WARNING![0m
+[0;32mI (269728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 29[0m
+[0;32mI (269728) FINAL_C3: Humedad: 29[0m
+[0;32mI (269728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (274778) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (274778) FINAL_C3: Temperatura: 26[0m
+[0;32mI (274778) FINAL_C3: TEMP WARNING![0m
+[0;32mI (274828) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 29[0m
+[0;32mI (274828) FINAL_C3: Humedad: 29[0m
+[0;32mI (274828) FINAL_C3: HUMEDAD NORMAL[0m
+[1;31mE (285088) mqtt_client: No PING_RESP, disconnected[0m
+[0;32mI (285678) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[1;31mE (310098) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (310098) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (310098) mqtt_client: Error transport connect[0m
+[1;31mE (310098) FINAL_C3: Error en el stack MQTT[0m
+[0;32mI (312248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (314078) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (318958) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (328078) FINAL_C3: Conectado al Broker[0m
+[0;32mI (332298) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332298) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332298) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332298) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332298) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332308) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332308) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332308) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332318) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332318) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332328) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332328) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332328) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332338) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332338) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332348) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332348) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332348) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332358) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332358) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332358) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332368) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332368) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332368) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332378) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332378) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332378) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332858) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (332858) FINAL_C3: Temperatura: 26[0m
+[0;32mI (332858) FINAL_C3: TEMP WARNING![0m
+[0;32mI (332858) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (332858) FINAL_C3: Humedad: 28[0m
+[0;32mI (332868) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (342168) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (342168) FINAL_C3: Temperatura: 26[0m
+[0;32mI (342168) FINAL_C3: TEMP WARNING![0m
+[0;32mI (342668) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (342668) FINAL_C3: Humedad: 28[0m
+[0;32mI (342668) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (342728) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (342728) FINAL_C3: Temperatura: 26[0m
+[0;32mI (342728) FINAL_C3: TEMP WARNING![0m
+[0;32mI (342728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (342738) FINAL_C3: Humedad: 28[0m
+[0;32mI (342738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (347688) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (347688) FINAL_C3: Temperatura: 26[0m
+[0;32mI (347688) FINAL_C3: TEMP WARNING![0m
+[0;32mI (347728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (347728) FINAL_C3: Humedad: 28[0m
+[0;32mI (347728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (353008) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (353008) FINAL_C3: Temperatura: 26[0m
+[0;32mI (353008) FINAL_C3: TEMP WARNING![0m
+[0;32mI (353518) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (353528) FINAL_C3: Humedad: 28[0m
+[0;32mI (353528) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (358128) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (358128) FINAL_C3: Temperatura: 26[0m
+[0;32mI (358128) FINAL_C3: TEMP WARNING![0m
+[0;32mI (358238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (358238) FINAL_C3: Humedad: 28[0m
+[0;32mI (358238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (363458) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (363458) FINAL_C3: Temperatura: 26[0m
+[0;32mI (363458) FINAL_C3: TEMP WARNING![0m
+[0;32mI (363478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (363478) FINAL_C3: Humedad: 28[0m
+[0;32mI (363478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (368578) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (368578) FINAL_C3: Temperatura: 26[0m
+[0;32mI (368578) FINAL_C3: TEMP WARNING![0m
+[0;32mI (368888) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 28[0m
+[0;32mI (368888) FINAL_C3: Humedad: 28[0m
+[0;32mI (368888) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (372248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (372968) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (373918) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (373928) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (373928) FINAL_C3: Temperatura: 26[0m
+[0;32mI (373928) FINAL_C3: TEMP WARNING![0m
+[0;32mI (374028) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 29[0m
+[0;32mI (374028) FINAL_C3: Humedad: 29[0m
+[0;32mI (374028) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (416498) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 52[0m
+[0;32mI (416498) FINAL_C3: Temperatura: 52[0m
+[0;32mI (416498) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (416728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 9[0m
+[0;32mI (416728) FINAL_C3: Humedad: 9[0m
+[0;32mI (416728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (421828) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 45[0m
+[0;32mI (421828) FINAL_C3: Temperatura: 45[0m
+[0;32mI (421828) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (421978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 9[0m
+[0;32mI (421978) FINAL_C3: Humedad: 9[0m
+[0;32mI (421978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (427028) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 42[0m
+[0;32mI (427028) FINAL_C3: Temperatura: 42[0m
+[0;32mI (427028) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (427238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 10[0m
+[0;32mI (427238) FINAL_C3: Humedad: 10[0m
+[0;32mI (427238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (432248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (432248) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 40[0m
+[0;32mI (432248) FINAL_C3: Temperatura: 40[0m
+[0;32mI (432248) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (433218) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 10[0m
+[0;32mI (433218) FINAL_C3: Humedad: 10[0m
+[0;32mI (433218) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (433508) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (434628) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (437388) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 38[0m
+[0;32mI (437388) FINAL_C3: Temperatura: 38[0m
+[0;32mI (437388) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (437488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 11[0m
+[0;32mI (437488) FINAL_C3: Humedad: 11[0m
+[0;32mI (437488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (442558) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 37[0m
+[0;32mI (442558) FINAL_C3: Temperatura: 37[0m
+[0;32mI (442558) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (442758) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 12[0m
+[0;32mI (442758) FINAL_C3: Humedad: 12[0m
+[0;32mI (442758) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (447808) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 36[0m
+[0;32mI (447808) FINAL_C3: Temperatura: 36[0m
+[0;32mI (447808) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (447978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 13[0m
+[0;32mI (447978) FINAL_C3: Humedad: 13[0m
+[0;32mI (447978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (452948) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 35[0m
+[0;32mI (452948) FINAL_C3: Temperatura: 35[0m
+[0;32mI (452948) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (452978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 13[0m
+[0;32mI (452988) FINAL_C3: Humedad: 13[0m
+[0;32mI (452988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (458258) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 35[0m
+[0;32mI (458258) FINAL_C3: Temperatura: 35[0m
+[0;32mI (458258) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (458488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 14[0m
+[0;32mI (458488) FINAL_C3: Humedad: 14[0m
+[0;32mI (458488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (463538) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 34[0m
+[0;32mI (463538) FINAL_C3: Temperatura: 34[0m
+[0;32mI (463538) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (463758) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 15[0m
+[0;32mI (463758) FINAL_C3: Humedad: 15[0m
+[0;32mI (463758) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (468618) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 33[0m
+[0;32mI (468618) FINAL_C3: Temperatura: 33[0m
+[0;32mI (468618) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (468728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 15[0m
+[0;32mI (468728) FINAL_C3: Humedad: 15[0m
+[0;32mI (468728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (473838) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 33[0m
+[0;32mI (473838) FINAL_C3: Temperatura: 33[0m
+[0;32mI (473838) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (473978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 16[0m
+[0;32mI (473978) FINAL_C3: Humedad: 16[0m
+[0;32mI (473978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (479168) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 33[0m
+[0;32mI (479168) FINAL_C3: Temperatura: 33[0m
+[0;32mI (479168) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (479228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 16[0m
+[0;32mI (479228) FINAL_C3: Humedad: 16[0m
+[0;32mI (479228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (484388) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 32[0m
+[0;32mI (484388) FINAL_C3: Temperatura: 32[0m
+[0;32mI (484388) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (484498) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 18[0m
+[0;32mI (484498) FINAL_C3: Humedad: 18[0m
+[0;32mI (484498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (489608) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 32[0m
+[0;32mI (489608) FINAL_C3: Temperatura: 32[0m
+[0;32mI (489608) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (489728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 19[0m
+[0;32mI (489728) FINAL_C3: Humedad: 19[0m
+[0;32mI (489728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (492248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (492878) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (493908) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (494728) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 31[0m
+[0;32mI (494728) FINAL_C3: Temperatura: 31[0m
+[0;32mI (494728) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (495138) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 21[0m
+[0;32mI (495138) FINAL_C3: Humedad: 21[0m
+[0;32mI (495138) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (499948) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 31[0m
+[0;32mI (499948) FINAL_C3: Temperatura: 31[0m
+[0;32mI (499948) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (499988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 23[0m
+[0;32mI (499988) FINAL_C3: Humedad: 23[0m
+[0;32mI (499988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (505378) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 31[0m
+[0;32mI (505378) FINAL_C3: Temperatura: 31[0m
+[0;32mI (505378) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (505488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 24[0m
+[0;32mI (505488) FINAL_C3: Humedad: 24[0m
+[0;32mI (505488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (510498) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 30[0m
+[0;32mI (510498) FINAL_C3: Temperatura: 30[0m
+[0;32mI (510498) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (511008) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (511008) FINAL_C3: Humedad: 25[0m
+[0;32mI (511008) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (515718) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 30[0m
+[0;32mI (515718) FINAL_C3: Temperatura: 30[0m
+[0;32mI (515718) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (515738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (515738) FINAL_C3: Humedad: 25[0m
+[0;32mI (515738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (520948) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 30[0m
+[0;32mI (520948) FINAL_C3: Temperatura: 30[0m
+[0;32mI (520948) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (520988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (520988) FINAL_C3: Humedad: 26[0m
+[0;32mI (520988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (526058) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 30[0m
+[0;32mI (526058) FINAL_C3: Temperatura: 30[0m
+[0;32mI (526058) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (526238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (526238) FINAL_C3: Humedad: 25[0m
+[0;32mI (526238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (531388) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 30[0m
+[0;32mI (531388) FINAL_C3: Temperatura: 30[0m
+[0;32mI (531388) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (531488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (531488) FINAL_C3: Humedad: 25[0m
+[0;32mI (531488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (536508) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (536508) FINAL_C3: Temperatura: 29[0m
+[0;32mI (536508) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (536728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (536728) FINAL_C3: Humedad: 25[0m
+[0;32mI (536728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (541738) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (541738) FINAL_C3: Temperatura: 29[0m
+[0;32mI (541738) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (541988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (541988) FINAL_C3: Humedad: 25[0m
+[0;32mI (541988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (546958) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (546958) FINAL_C3: Temperatura: 29[0m
+[0;32mI (546958) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (546968) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (546968) FINAL_C3: Humedad: 25[0m
+[0;32mI (546968) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (552248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (552488) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (552488) FINAL_C3: Temperatura: 29[0m
+[0;32mI (552488) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (552488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (552498) FINAL_C3: Humedad: 25[0m
+[0;32mI (552498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (553288) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (554228) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (557548) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (557548) FINAL_C3: Temperatura: 29[0m
+[0;32mI (557548) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (557728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (557728) FINAL_C3: Humedad: 25[0m
+[0;32mI (557728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (562728) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (562728) FINAL_C3: Temperatura: 29[0m
+[0;32mI (562728) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (562738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (562738) FINAL_C3: Humedad: 25[0m
+[0;32mI (562738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (567858) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (567858) FINAL_C3: Temperatura: 29[0m
+[0;32mI (567858) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (567978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (567978) FINAL_C3: Humedad: 25[0m
+[0;32mI (567978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (573228) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 29[0m
+[0;32mI (573228) FINAL_C3: Temperatura: 29[0m
+[0;32mI (573228) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (573228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (573238) FINAL_C3: Humedad: 25[0m
+[0;32mI (573238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (578288) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (578288) FINAL_C3: Temperatura: 28[0m
+[0;32mI (578288) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (578488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (578488) FINAL_C3: Humedad: 25[0m
+[0;32mI (578498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (583748) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (583748) FINAL_C3: Temperatura: 28[0m
+[0;32mI (583748) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (583978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (583978) FINAL_C3: Humedad: 25[0m
+[0;32mI (583978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (588938) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (588938) FINAL_C3: Temperatura: 28[0m
+[0;32mI (588938) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (589138) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (589138) FINAL_C3: Humedad: 25[0m
+[0;32mI (589138) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (594158) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (594158) FINAL_C3: Temperatura: 28[0m
+[0;32mI (594158) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (594178) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (594178) FINAL_C3: Humedad: 25[0m
+[0;32mI (594178) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (599278) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (599278) FINAL_C3: Temperatura: 28[0m
+[0;32mI (599278) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (599278) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (599288) FINAL_C3: Humedad: 25[0m
+[0;32mI (599288) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (604918) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (604918) FINAL_C3: Temperatura: 28[0m
+[0;32mI (604918) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (604918) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (604918) FINAL_C3: Humedad: 25[0m
+[0;32mI (604918) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (609718) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (609718) FINAL_C3: Temperatura: 28[0m
+[0;32mI (609718) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (609738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (609738) FINAL_C3: Humedad: 25[0m
+[0;32mI (609738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (612248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (613088) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (614128) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (614948) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (614948) FINAL_C3: Temperatura: 28[0m
+[0;32mI (614948) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (614978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (614978) FINAL_C3: Humedad: 25[0m
+[0;32mI (614978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (620378) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (620378) FINAL_C3: Temperatura: 28[0m
+[0;32mI (620378) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (620488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (620488) FINAL_C3: Humedad: 25[0m
+[0;32mI (620488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (625398) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (625398) FINAL_C3: Temperatura: 28[0m
+[0;32mI (625398) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (625518) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (625528) FINAL_C3: Humedad: 25[0m
+[0;32mI (625528) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (630618) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (630618) FINAL_C3: Temperatura: 28[0m
+[0;32mI (630618) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (630738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (630738) FINAL_C3: Humedad: 25[0m
+[0;32mI (630738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (635838) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (635838) FINAL_C3: Temperatura: 28[0m
+[0;32mI (635838) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (636008) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (636008) FINAL_C3: Humedad: 25[0m
+[0;32mI (636008) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (640958) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (640958) FINAL_C3: Temperatura: 28[0m
+[0;32mI (640958) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (640988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (640988) FINAL_C3: Humedad: 25[0m
+[0;32mI (640988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (646278) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (646278) FINAL_C3: Temperatura: 28[0m
+[0;32mI (646278) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (646688) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (646688) FINAL_C3: Humedad: 25[0m
+[0;32mI (646688) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (651538) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (651538) FINAL_C3: Temperatura: 28[0m
+[0;32mI (651538) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (651918) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (651918) FINAL_C3: Humedad: 25[0m
+[0;32mI (651918) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (656828) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 28[0m
+[0;32mI (656828) FINAL_C3: Temperatura: 28[0m
+[0;32mI (656828) FINAL_C3: TEMP CRITICA![0m
+[0;32mI (656998) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (656998) FINAL_C3: Humedad: 25[0m
+[0;32mI (656998) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (661958) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (661968) FINAL_C3: Temperatura: 27[0m
+[0;32mI (661968) FINAL_C3: TEMP WARNING![0m
+[0;32mI (662028) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (662028) FINAL_C3: Humedad: 25[0m
+[0;32mI (662028) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (667308) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (667318) FINAL_C3: Temperatura: 27[0m
+[0;32mI (667318) FINAL_C3: TEMP WARNING![0m
+[0;32mI (667488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (667488) FINAL_C3: Humedad: 25[0m
+[0;32mI (667488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (672248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (672248) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (672248) FINAL_C3: Temperatura: 27[0m
+[0;32mI (672248) FINAL_C3: TEMP WARNING![0m
+[0;32mI (672518) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (672518) FINAL_C3: Humedad: 25[0m
+[0;32mI (672518) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (673028) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (674128) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (677738) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (677738) FINAL_C3: Temperatura: 27[0m
+[0;32mI (677738) FINAL_C3: TEMP WARNING![0m
+[0;32mI (677978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (677978) FINAL_C3: Humedad: 25[0m
+[0;32mI (677978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (682678) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (682678) FINAL_C3: Temperatura: 27[0m
+[0;32mI (682678) FINAL_C3: TEMP WARNING![0m
+[0;32mI (683158) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (683158) FINAL_C3: Humedad: 25[0m
+[0;32mI (683158) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (688168) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (688168) FINAL_C3: Temperatura: 27[0m
+[0;32mI (688168) FINAL_C3: TEMP WARNING![0m
+[0;32mI (688178) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (688178) FINAL_C3: Humedad: 25[0m
+[0;32mI (688178) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (693288) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (693288) FINAL_C3: Temperatura: 27[0m
+[0;32mI (693288) FINAL_C3: TEMP WARNING![0m
+[0;32mI (693798) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (693798) FINAL_C3: Humedad: 25[0m
+[0;32mI (693798) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (698508) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (698508) FINAL_C3: Temperatura: 27[0m
+[0;32mI (698508) FINAL_C3: TEMP WARNING![0m
+[0;32mI (699008) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (699018) FINAL_C3: Humedad: 25[0m
+[0;32mI (699018) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (703618) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (703618) FINAL_C3: Temperatura: 27[0m
+[0;32mI (703618) FINAL_C3: TEMP WARNING![0m
+[0;32mI (703738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (703738) FINAL_C3: Humedad: 26[0m
+[0;32mI (703738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (708848) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (708848) FINAL_C3: Temperatura: 27[0m
+[0;32mI (708848) FINAL_C3: TEMP WARNING![0m
+[0;32mI (709158) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (709158) FINAL_C3: Humedad: 26[0m
+[0;32mI (709158) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (713968) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (713968) FINAL_C3: Temperatura: 27[0m
+[0;32mI (713968) FINAL_C3: TEMP WARNING![0m
+[0;32mI (714168) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (714178) FINAL_C3: Humedad: 26[0m
+[0;32mI (714178) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (719598) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (719598) FINAL_C3: Temperatura: 27[0m
+[0;32mI (719598) FINAL_C3: TEMP WARNING![0m
+[0;32mI (719728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (719728) FINAL_C3: Humedad: 26[0m
+[0;32mI (719728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (724408) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (724408) FINAL_C3: Temperatura: 27[0m
+[0;32mI (724408) FINAL_C3: TEMP WARNING![0m
+[0;32mI (724718) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (724718) FINAL_C3: Humedad: 25[0m
+[0;32mI (724718) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (729638) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (729638) FINAL_C3: Temperatura: 27[0m
+[0;32mI (729638) FINAL_C3: TEMP WARNING![0m
+[0;32mI (729748) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (729748) FINAL_C3: Humedad: 25[0m
+[0;32mI (729748) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (732248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (733078) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (734148) mender: ./external/mender-mcu-client/core/src/mender-client.c (930): Downloading deployment artifact with id '748d8ab1-b421-4a7b-a852-885d05a2d62d', artifact name 'release-1' and uri 'https://c271964d41749feb10da762816c952ee.r2.cloudflarestorage.com/mender-artifact-storage-prod-hm-eu/69ee61d6289aeeabc6f9033f/bc2614a0-58be-[0m
+[0;32mI (734858) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (734988) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (734988) FINAL_C3: Temperatura: 27[0m
+[0;32mI (734988) FINAL_C3: TEMP WARNING![0m
+[0;32mI (735088) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (735088) FINAL_C3: Humedad: 25[0m
+[0;32mI (735088) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (735758) MENDER: Deployment: downloading[0m
+[0;32mI (736938) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (738168) mender: ./external/mender-mcu-client/core/src/mender-artifact.c (374): Artifact has valid version[0m
+[0;32mI (739998) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (739998) FINAL_C3: Temperatura: 27[0m
+[0;32mI (739998) FINAL_C3: TEMP WARNING![0m
+[0;32mI (740308) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (740308) FINAL_C3: Humedad: 25[0m
+[0;32mI (740308) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (743058) mender: ./external/mender-mcu-client/core/src/mender-client.c (943): Download done, installing artifact[0m
+[0;32mI (743558) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (744898) MENDER: Deployment: installing[0m
+[0;32mI (745318) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (745428) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (745428) FINAL_C3: Temperatura: 27[0m
+[0;32mI (745428) FINAL_C3: TEMP WARNING![0m
+[0;32mI (745498) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (745498) FINAL_C3: Humedad: 25[0m
+[0;32mI (745498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (746568) MENDER: Deployment: success[0m
+[0;32mI (750728) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (750728) FINAL_C3: Temperatura: 27[0m
+[0;32mI (750728) FINAL_C3: TEMP WARNING![0m
+[0;32mI (751138) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (751138) FINAL_C3: Humedad: 26[0m
+[0;32mI (751138) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (755748) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (755748) FINAL_C3: Temperatura: 27[0m
+[0;32mI (755748) FINAL_C3: TEMP WARNING![0m
+[0;32mI (755978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (755978) FINAL_C3: Humedad: 26[0m
+[0;32mI (755978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (763738) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (763738) FINAL_C3: Temperatura: 27[0m
+[0;32mI (763738) FINAL_C3: TEMP WARNING![0m
+[0;32mI (763978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (763978) FINAL_C3: Humedad: 26[0m
+[0;32mI (763978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (766238) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (766238) FINAL_C3: Temperatura: 27[0m
+[0;32mI (766238) FINAL_C3: TEMP WARNING![0m
+[0;32mI (766248) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (766248) FINAL_C3: Humedad: 26[0m
+[0;32mI (766248) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (771518) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (771518) FINAL_C3: Temperatura: 27[0m
+[0;32mI (771518) FINAL_C3: TEMP WARNING![0m
+[0;32mI (772028) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (772028) FINAL_C3: Humedad: 26[0m
+[0;32mI (772028) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (776838) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (776838) FINAL_C3: Temperatura: 27[0m
+[0;32mI (776838) FINAL_C3: TEMP WARNING![0m
+[0;32mI (776848) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (776848) FINAL_C3: Humedad: 26[0m
+[0;32mI (776848) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (781878) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (781878) FINAL_C3: Temperatura: 27[0m
+[0;32mI (781878) FINAL_C3: TEMP WARNING![0m
+[0;32mI (781988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (781988) FINAL_C3: Humedad: 26[0m
+[0;32mI (781988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (787218) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (787218) FINAL_C3: Temperatura: 27[0m
+[0;32mI (787218) FINAL_C3: TEMP WARNING![0m
+[0;32mI (787498) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (787498) FINAL_C3: Humedad: 26[0m
+[0;32mI (787498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (792248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (792248) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (792248) FINAL_C3: Temperatura: 27[0m
+[0;32mI (792248) FINAL_C3: TEMP WARNING![0m
+[0;32mI (792478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (792478) FINAL_C3: Humedad: 26[0m
+[0;32mI (792478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (792788) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (793948) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (797528) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (797528) FINAL_C3: Temperatura: 27[0m
+[0;32mI (797528) FINAL_C3: TEMP WARNING![0m
+[0;32mI (797738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (797738) FINAL_C3: Humedad: 26[0m
+[0;32mI (797738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (802958) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (802958) FINAL_C3: Temperatura: 27[0m
+[0;32mI (802958) FINAL_C3: TEMP WARNING![0m
+[0;32mI (803258) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (803258) FINAL_C3: Humedad: 26[0m
+[0;32mI (803258) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (808338) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (808338) FINAL_C3: Temperatura: 27[0m
+[0;32mI (808338) FINAL_C3: TEMP WARNING![0m
+[0;32mI (808788) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (808788) FINAL_C3: Humedad: 26[0m
+[0;32mI (808798) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (813508) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (813508) FINAL_C3: Temperatura: 27[0m
+[0;32mI (813508) FINAL_C3: TEMP WARNING![0m
+[0;32mI (814008) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (814008) FINAL_C3: Humedad: 26[0m
+[0;32mI (814008) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (818418) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (818418) FINAL_C3: Temperatura: 27[0m
+[0;32mI (818418) FINAL_C3: TEMP WARNING![0m
+[0;32mI (818498) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (818498) FINAL_C3: Humedad: 26[0m
+[0;32mI (818498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (823738) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (823738) FINAL_C3: Temperatura: 27[0m
+[0;32mI (823738) FINAL_C3: TEMP WARNING![0m
+[0;32mI (823978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (823978) FINAL_C3: Humedad: 26[0m
+[0;32mI (823978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (828958) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (828958) FINAL_C3: Temperatura: 27[0m
+[0;32mI (828968) FINAL_C3: TEMP WARNING![0m
+[0;32mI (828988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (828988) FINAL_C3: Humedad: 26[0m
+[0;32mI (828988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (834088) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (834088) FINAL_C3: Temperatura: 27[0m
+[0;32mI (834088) FINAL_C3: TEMP WARNING![0m
+[0;32mI (834228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (834228) FINAL_C3: Humedad: 26[0m
+[0;32mI (834228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (839198) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (839198) FINAL_C3: Temperatura: 27[0m
+[0;32mI (839198) FINAL_C3: TEMP WARNING![0m
+[0;32mI (839398) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (839408) FINAL_C3: Humedad: 26[0m
+[0;32mI (839408) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (844528) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (844528) FINAL_C3: Temperatura: 27[0m
+[0;32mI (844528) FINAL_C3: TEMP WARNING![0m
+[0;32mI (844938) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (844938) FINAL_C3: Humedad: 26[0m
+[0;32mI (844938) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (849748) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (849748) FINAL_C3: Temperatura: 27[0m
+[0;32mI (849748) FINAL_C3: TEMP WARNING![0m
+[0;32mI (849988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (849988) FINAL_C3: Humedad: 26[0m
+[0;32mI (849988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (852248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (852808) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (853848) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (854968) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (854968) FINAL_C3: Temperatura: 27[0m
+[0;32mI (854968) FINAL_C3: TEMP WARNING![0m
+[0;32mI (855378) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (855378) FINAL_C3: Humedad: 26[0m
+[0;32mI (855378) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (860298) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (860298) FINAL_C3: Temperatura: 27[0m
+[0;32mI (860298) FINAL_C3: TEMP WARNING![0m
+[0;32mI (860908) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (860908) FINAL_C3: Humedad: 26[0m
+[0;32mI (860908) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (865418) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (865418) FINAL_C3: Temperatura: 27[0m
+[0;32mI (865418) FINAL_C3: TEMP WARNING![0m
+[0;32mI (865478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (865478) FINAL_C3: Humedad: 26[0m
+[0;32mI (865478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (870738) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (870738) FINAL_C3: Temperatura: 27[0m
+[0;32mI (870738) FINAL_C3: TEMP WARNING![0m
+[0;32mI (871148) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (871148) FINAL_C3: Humedad: 26[0m
+[0;32mI (871148) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (875758) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (875768) FINAL_C3: Temperatura: 27[0m
+[0;32mI (875768) FINAL_C3: TEMP WARNING![0m
+[0;32mI (875978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (875978) FINAL_C3: Humedad: 26[0m
+[0;32mI (875978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (881288) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (881288) FINAL_C3: Temperatura: 27[0m
+[0;32mI (881288) FINAL_C3: TEMP WARNING![0m
+[0;32mI (881488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 25[0m
+[0;32mI (881488) FINAL_C3: Humedad: 25[0m
+[0;32mI (881488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (886308) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (886308) FINAL_C3: Temperatura: 27[0m
+[0;32mI (886308) FINAL_C3: TEMP WARNING![0m
+[0;32mI (886508) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (886508) FINAL_C3: Humedad: 26[0m
+[0;32mI (886508) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (891528) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (891528) FINAL_C3: Temperatura: 26[0m
+[0;32mI (891528) FINAL_C3: TEMP WARNING![0m
+[0;32mI (892058) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (892058) FINAL_C3: Humedad: 26[0m
+[0;32mI (892058) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (896748) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 27[0m
+[0;32mI (896748) FINAL_C3: Temperatura: 27[0m
+[0;32mI (896748) FINAL_C3: TEMP WARNING![0m
+[0;32mI (897158) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (897158) FINAL_C3: Humedad: 26[0m
+[0;32mI (897158) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (901978) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (901978) FINAL_C3: Temperatura: 26[0m
+[0;32mI (901978) FINAL_C3: TEMP WARNING![0m
+[0;32mI (902478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (902478) FINAL_C3: Humedad: 26[0m
+[0;32mI (902478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (907088) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (907088) FINAL_C3: Temperatura: 26[0m
+[0;32mI (907088) FINAL_C3: TEMP WARNING![0m
+[0;32mI (907238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (907238) FINAL_C3: Humedad: 26[0m
+[0;32mI (907238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (912248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (912318) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (912318) FINAL_C3: Temperatura: 26[0m
+[0;32mI (912318) FINAL_C3: TEMP WARNING![0m
+[0;32mI (912778) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (912788) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (912788) FINAL_C3: Humedad: 26[0m
+[0;32mI (912788) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (913748) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (917678) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (917678) FINAL_C3: Temperatura: 26[0m
+[0;32mI (917678) FINAL_C3: TEMP WARNING![0m
+[0;32mI (917698) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (917698) FINAL_C3: Humedad: 26[0m
+[0;32mI (917698) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (922798) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (922808) FINAL_C3: Temperatura: 26[0m
+[0;32mI (922808) FINAL_C3: TEMP WARNING![0m
+[0;32mI (922978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (922988) FINAL_C3: Humedad: 26[0m
+[0;32mI (922988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (928048) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (928048) FINAL_C3: Temperatura: 26[0m
+[0;32mI (928048) FINAL_C3: TEMP WARNING![0m
+[0;32mI (928238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (928238) FINAL_C3: Humedad: 26[0m
+[0;32mI (928238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (933128) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (933128) FINAL_C3: Temperatura: 26[0m
+[0;32mI (933128) FINAL_C3: TEMP WARNING![0m
+[0;32mI (933238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (933238) FINAL_C3: Humedad: 26[0m
+[0;32mI (933238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (938488) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (938488) FINAL_C3: Temperatura: 26[0m
+[0;32mI (938488) FINAL_C3: TEMP WARNING![0m
+[0;32mI (938488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (938498) FINAL_C3: Humedad: 26[0m
+[0;32mI (938498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (943728) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (943738) FINAL_C3: Temperatura: 26[0m
+[0;32mI (943738) FINAL_C3: TEMP WARNING![0m
+[0;32mI (943738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (943738) FINAL_C3: Humedad: 26[0m
+[0;32mI (943738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (949288) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (949288) FINAL_C3: Temperatura: 26[0m
+[0;32mI (949288) FINAL_C3: TEMP WARNING![0m
+[0;32mI (949588) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (949588) FINAL_C3: Humedad: 26[0m
+[0;32mI (949588) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (954098) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (954098) FINAL_C3: Temperatura: 26[0m
+[0;32mI (954098) FINAL_C3: TEMP WARNING![0m
+[0;32mI (954228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (954238) FINAL_C3: Humedad: 26[0m
+[0;32mI (954238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (959418) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (959418) FINAL_C3: Temperatura: 26[0m
+[0;32mI (959418) FINAL_C3: TEMP WARNING![0m
+[0;32mI (959478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (959478) FINAL_C3: Humedad: 26[0m
+[0;32mI (959488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (964638) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (964638) FINAL_C3: Temperatura: 26[0m
+[0;32mI (964638) FINAL_C3: TEMP WARNING![0m
+[0;32mI (964748) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (964748) FINAL_C3: Humedad: 26[0m
+[0;32mI (964748) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (969758) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (969758) FINAL_C3: Temperatura: 26[0m
+[0;32mI (969758) FINAL_C3: TEMP WARNING![0m
+[0;32mI (969988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (969988) FINAL_C3: Humedad: 26[0m
+[0;32mI (969988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (972248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (973018) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (973988) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (975188) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (975188) FINAL_C3: Temperatura: 26[0m
+[0;32mI (975188) FINAL_C3: TEMP WARNING![0m
+[0;32mI (975228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (975238) FINAL_C3: Humedad: 27[0m
+[0;32mI (975238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (980208) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (980208) FINAL_C3: Temperatura: 26[0m
+[0;32mI (980208) FINAL_C3: TEMP WARNING![0m
+[0;32mI (980258) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (980258) FINAL_C3: Humedad: 27[0m
+[0;32mI (980258) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (985538) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (985538) FINAL_C3: Temperatura: 26[0m
+[0;32mI (985538) FINAL_C3: TEMP WARNING![0m
+[0;32mI (985938) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (985938) FINAL_C3: Humedad: 27[0m
+[0;32mI (985938) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (990748) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (990748) FINAL_C3: Temperatura: 26[0m
+[0;32mI (990748) FINAL_C3: TEMP WARNING![0m
+[0;32mI (991158) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (991158) FINAL_C3: Humedad: 27[0m
+[0;32mI (991158) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (995878) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (995878) FINAL_C3: Temperatura: 26[0m
+[0;32mI (995878) FINAL_C3: TEMP WARNING![0m
+[0;32mI (995978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (995978) FINAL_C3: Humedad: 27[0m
+[0;32mI (995978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1001198) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1001198) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1001198) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1001398) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1001398) FINAL_C3: Humedad: 27[0m
+[0;32mI (1001398) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1006418) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1006418) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1006418) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1006478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1006488) FINAL_C3: Humedad: 26[0m
+[0;32mI (1006488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1011538) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1011538) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1011538) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1011758) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1011758) FINAL_C3: Humedad: 27[0m
+[0;32mI (1011758) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1016808) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1016808) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1016808) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1016988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1016988) FINAL_C3: Humedad: 27[0m
+[0;32mI (1016988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1021878) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1021878) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1021878) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1021988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1021988) FINAL_C3: Humedad: 27[0m
+[0;32mI (1021988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1027108) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1027108) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1027108) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1027238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1027238) FINAL_C3: Humedad: 27[0m
+[0;32mI (1027238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1032248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (1033058) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1033058) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1033058) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1033058) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1033098) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1033098) FINAL_C3: Humedad: 27[0m
+[0;32mI (1033098) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1034268) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (1037648) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1037648) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1037648) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1037688) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1037688) FINAL_C3: Humedad: 27[0m
+[0;32mI (1037688) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1042788) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1042788) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1042788) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1042988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1042988) FINAL_C3: Humedad: 27[0m
+[0;32mI (1042988) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1048038) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1048038) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1048038) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1048238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1048238) FINAL_C3: Humedad: 26[0m
+[0;32mI (1048238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1053288) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1053288) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1053288) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1053488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1053488) FINAL_C3: Humedad: 27[0m
+[0;32mI (1053488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1058438) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1058438) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1058438) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1058478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1058478) FINAL_C3: Humedad: 27[0m
+[0;32mI (1058478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1063738) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1063738) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1063738) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1063978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1063978) FINAL_C3: Humedad: 27[0m
+[0;32mI (1063978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1069028) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1069028) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1069028) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1069228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1069228) FINAL_C3: Humedad: 26[0m
+[0;32mI (1069228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1074118) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1074118) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1074118) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1074238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1074238) FINAL_C3: Humedad: 26[0m
+[0;32mI (1074238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1079488) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1079488) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1079488) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1079488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1079498) FINAL_C3: Humedad: 26[0m
+[0;32mI (1079498) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1084548) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1084558) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1084558) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1084568) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1084568) FINAL_C3: Humedad: 26[0m
+[0;32mI (1084568) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1089968) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1089968) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1089968) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1089988) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1089988) FINAL_C3: Humedad: 26[0m
+[0;32mI (1089998) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1092248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (1092728) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1093968) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (1095058) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1095058) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1095058) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1095238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1095238) FINAL_C3: Humedad: 26[0m
+[0;32mI (1095238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1100218) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1100218) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1100218) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1100428) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1100428) FINAL_C3: Humedad: 26[0m
+[0;32mI (1100428) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1105518) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1105518) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1105518) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1105728) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1105728) FINAL_C3: Humedad: 26[0m
+[0;32mI (1105728) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1110758) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1110758) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1110758) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1110978) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1110978) FINAL_C3: Humedad: 26[0m
+[0;32mI (1110978) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1115988) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1115988) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1115988) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1115998) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1116008) FINAL_C3: Humedad: 26[0m
+[0;32mI (1116008) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1121408) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1121408) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1121408) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1121478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1121478) FINAL_C3: Humedad: 26[0m
+[0;32mI (1121478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1126438) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1126438) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1126438) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1126478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1126478) FINAL_C3: Humedad: 26[0m
+[0;32mI (1126478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1131648) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1131648) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1131648) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1131768) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1131768) FINAL_C3: Humedad: 26[0m
+[0;32mI (1131768) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1136968) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1136978) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1136978) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1137178) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1137178) FINAL_C3: Humedad: 26[0m
+[0;32mI (1137178) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1142108) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1142108) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1142108) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1142228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1142228) FINAL_C3: Humedad: 26[0m
+[0;32mI (1142228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1147328) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1147328) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1147328) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1147478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1147478) FINAL_C3: Humedad: 26[0m
+[0;32mI (1147478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1152248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (1152578) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1152578) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1152578) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1152668) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1152738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1152738) FINAL_C3: Humedad: 26[0m
+[0;32mI (1152738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1153668) mender: ./external/mender-mcu-client/core/src/mender-client.c (930): Downloading deployment artifact with id '7c4bc9b5-9b8f-4182-aa35-edfe2df19373', artifact name 'release-1' and uri 'https://c271964d41749feb10da762816c952ee.r2.cloudflarestorage.com/mender-artifact-storage-prod-hm-eu/69ee61d6289aeeabc6f9033f/bc2614a0-58be-[0m
+[0;32mI (1154168) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1155038) MENDER: Deployment: downloading[0m
+[0;32mI (1156088) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1157148) mender: ./external/mender-mcu-client/core/src/mender-artifact.c (374): Artifact has valid version[0m
+[0;32mI (1157578) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1157578) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1157578) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1157738) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1157738) FINAL_C3: Humedad: 26[0m
+[0;32mI (1157738) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1161388) mender: ./external/mender-mcu-client/core/src/mender-client.c (943): Download done, installing artifact[0m
+[0;32mI (1161808) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1163008) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1163008) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1163008) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1163018) MENDER: Deployment: installing[0m
+[0;32mI (1163448) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1163448) FINAL_C3: Humedad: 26[0m
+[0;32mI (1163448) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1163508) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1164588) MENDER: Deployment: success[0m
+[0;32mI (1168208) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1168208) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1168208) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1168228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1168228) FINAL_C3: Humedad: 26[0m
+[0;32mI (1168228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1173428) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1173428) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1173428) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1173478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1173478) FINAL_C3: Humedad: 26[0m
+[0;32mI (1173478) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1178548) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1178548) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1178548) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1178758) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1178758) FINAL_C3: Humedad: 26[0m
+[0;32mI (1178758) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1183898) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1183898) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1183898) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1184078) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1184078) FINAL_C3: Humedad: 26[0m
+[0;32mI (1184078) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1189098) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1189098) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1189098) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1189228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 26[0m
+[0;32mI (1189228) FINAL_C3: Humedad: 26[0m
+[0;32mI (1189228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1194478) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1194478) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1194478) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1194478) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1194488) FINAL_C3: Humedad: 27[0m
+[0;32mI (1194488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1199438) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1199438) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1199438) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1199458) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1199458) FINAL_C3: Humedad: 27[0m
+[0;32mI (1199458) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1206948) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1206948) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1206948) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1207118) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1207118) FINAL_C3: Humedad: 27[0m
+[0;32mI (1207118) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1209878) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1209878) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1209878) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1209908) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1209908) FINAL_C3: Humedad: 27[0m
+[0;32mI (1209908) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1212248) mender: ./external/mender-mcu-client/core/src/mender-client.c (903): Checking for deployment...[0m
+[0;32mI (1212738) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (1213778) mender: ./external/mender-mcu-client/core/src/mender-client.c (911): No deployment available[0m
+[0;32mI (1215208) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1215208) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1215208) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1215238) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1215238) FINAL_C3: Humedad: 27[0m
+[0;32mI (1215238) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1220288) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1220288) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1220288) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1220488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1220488) FINAL_C3: Humedad: 27[0m
+[0;32mI (1220488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1225728) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1225728) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1225728) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1226368) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1226368) FINAL_C3: Humedad: 27[0m
+[0;32mI (1226368) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1230868) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1230868) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1230868) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1231078) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1231078) FINAL_C3: Humedad: 27[0m
+[0;32mI (1231078) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1235988) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1235988) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1235988) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1236228) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1236228) FINAL_C3: Humedad: 27[0m
+[0;32mI (1236228) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1241218) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1241218) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1241218) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1241248) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1241248) FINAL_C3: Humedad: 27[0m
+[0;32mI (1241248) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1246338) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1246338) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1246338) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1246488) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1246488) FINAL_C3: Humedad: 27[0m
+[0;32mI (1246488) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1251558) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1251558) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1251558) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1251748) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1251748) FINAL_C3: Humedad: 27[0m
+[0;32mI (1251748) FINAL_C3: HUMEDAD NORMAL[0m
+[0;32mI (1256878) FINAL_C3: TOPIC: sed/sensor/temp | DATA: 26[0m
+[0;32mI (1256878) FINAL_C3: Temperatura: 26[0m
+[0;32mI (1256878) FINAL_C3: TEMP WARNING![0m
+[0;32mI (1256998) FINAL_C3: TOPIC: sed/sensor/humidity | DATA: 27[0m
+[0;32mI (1256998) FINAL_C3: Humedad: 27[0m
+[0;32mI (1256998) FINAL_C3: HUMEDAD NORMAL[0m

@@ -1,0 +1,14 @@
+menu "Project Configuration"
+
+config ESP_WIFI_SSID
+    string "WiFi SSID"
+    default "prac4.1"
+
+config ESP_WIFI_PASSWORD
+    string "WiFi Password"
+    default "Yjh990909@"
+
+config BROKER_URL
+    string "Broker URL"
+    default "mqtt://172.20.10.7"
+endmenu

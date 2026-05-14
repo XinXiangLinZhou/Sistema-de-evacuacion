@@ -1,0 +1,2 @@
+source /home/jiahui/SED/esp-workspace/final_c3/build/bootloader/gdbinit/symbols
+source /home/jiahui/SED/esp-workspace/final_c3/build/bootloader/gdbinit/connect
