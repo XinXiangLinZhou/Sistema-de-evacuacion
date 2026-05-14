@@ -90,5 +90,7 @@ E importar este fichero json node-red-flows.json al Node-RED
 ```bash
 http://localhost:1880/dashboard
 ```
+## Enlace del video
+https://drive.google.com/file/d/178jUFE5TLgCmtSkbceOvxDpeCeOab7PC/view?usp=drivesdk
 
   
