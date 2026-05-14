@@ -90,18 +90,52 @@ E importar este fichero json node-red-flows.json al Node-RED
 ```bash
 http://localhost:1880/dashboard
 ```
+## 7. Mender
+
+###7.1 Installa mender en el proyecto
+```bash
+mkdir -p external/mender-mcu-client
+
+git clone --branch 0.12.3 --recursive \
+https://github.com/joelguittet/mender-mcu-client.git \
+external/mender-mcu-client/
+```
+### 7.2 Verificación de configuración
+```bash
+idf.py menuconfig
+Component config
+    → Mender Firmware Update
+```
+
+### 7.3 creación de un artefacto para ESP32
+```bash
+mender-artifact write module-image \
+  -T rootfs-image \
+  -n release-1 \
+  -t esp32 \
+  -o release-1.mender \
+  -f build/final_c3.bin
+```
+
+## 8. Ejecución del ESP32-C3 para detecta alerta
+
+### 8.1 Verificación de configuración
+```bash
+idf.py menuconfig
+Component config
+   → Mender Firmware Update
+```
+### 8.2 creación de un artefacto para ESP32-C3
+```bash
+idf.py fullclean
+idf.py build
+idf.py flash monitor
+```
+
+### 8.3 Compilación y ejecución
+```bash
+idf.py -p /dev/ttyAMY0 build flash monitor
+```
 ## Enlace del video
 https://drive.google.com/file/d/178jUFE5TLgCmtSkbceOvxDpeCeOab7PC/view?usp=drivesdk
-
-## 7. Mender
-### 7.1 creación de un artefacto para ESP32
-```bash
-mender-artifact write rootfs-image \
---compression none \
---device-type esp32 \
---artifact-name 1.0.1 \
---file build/a7.2.bin \
---output-path a7.2_1.0.1.mender
-Sistemas Empotrados Distribuidos Evaluación, despliegue y mantenimiento 89 / 91
-```
   
