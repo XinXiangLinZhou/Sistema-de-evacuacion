@@ -93,4 +93,15 @@ http://localhost:1880/dashboard
 ## Enlace del video
 https://drive.google.com/file/d/178jUFE5TLgCmtSkbceOvxDpeCeOab7PC/view?usp=drivesdk
 
+## 7. Mender
+### 7.1 creación de un artefacto para ESP32
+```bash
+mender-artifact write rootfs-image \
+--compression none \
+--device-type esp32 \
+--artifact-name 1.0.1 \
+--file build/a7.2.bin \
+--output-path a7.2_1.0.1.mender
+Sistemas Empotrados Distribuidos Evaluación, despliegue y mantenimiento 89 / 91
+```
   
